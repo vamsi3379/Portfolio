@@ -28,7 +28,9 @@ function Header() {
 
 
       <Navbar.Brand className='logotext' as={Link} to='/'>
-        <div className='logo'></div>
+        <div>
+          <h4 className='nameFont'>Vamsi</h4>
+        </div>
       </Navbar.Brand>
 
       <Navbar.Toggle className='navbar-toggler' aria-controls="responsive-navbar-nav"
@@ -80,7 +82,7 @@ function Header() {
 
           <Button
             onClick={() => {
-              window.open("https://drive.google.com/file/d/1zbrcyEPX5vpSL0JVXJb7x8CUZu089nYK/view?usp=sharing");
+              window.open("https://drive.google.com/file/d/1cWQ2i2s7s4LAi7Fz7RTsPpNGAEwIkUi_/view?usp=sharing");
             }}
             className='resumebtn'><span>Resume</span>
           </Button>

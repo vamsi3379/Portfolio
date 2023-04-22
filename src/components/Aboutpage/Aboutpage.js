@@ -10,7 +10,7 @@ function Aboutpage() {
                 <Row className='textbackground'>
                     <Col md={7} >
                         <h3 className='aboutmetext'>About <span>Me</span></h3>
-                        <p className='aboutdetails'>I'm a self-taught Front End developer from India. I build websites with a focus on providing the experience for everyone using them and responsiveness. Curious to learn more about developing scalable distribution systems, love problem solving, and care about writing and maintainable code. A responsive design makes your website accessible to all users, regardless of their devices.
+                        <p className='aboutdetails'>As a graduate student assistant at the Malt Group at the University of Florida, I have contributed to the development of a real-time traffic monitoring system and designed and developed a fully functional web application using various technologies. Prior to this, I worked as an Associate Nodejs Developer at Celebal Technologies, where I pioneered a Microsoft Teams Bot application using Node.js, Microsoft Bot Framework Composer, and Azure cloud. During my internship as a Full Stack Web Developer at Fintroops Fintech Solutions PVT LTD, I developed full-stack web applications for a car trading platform, enhancing user experience and engagement. In addition to my professional experience, I have also worked on several projects that have leveraged my skills in deep learning, natural language processing, and data science.
                         </p>
                         <ul className='skilllist'>
                             <Row>

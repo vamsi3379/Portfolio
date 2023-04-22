@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo+2&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Labrada&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap');
 
 /* Header style */
 
@@ -477,4 +478,7 @@
   .contactpara br {
     display: none;
   }
+}
+.nameFont {
+  font-family: 'Cormorant Garamond', serif;
 }
