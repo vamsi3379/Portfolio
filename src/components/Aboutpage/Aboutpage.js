@@ -3,20 +3,20 @@ import '../../pages/style.css';
 import { Container, Row, Col } from 'react-bootstrap'
 import Lottie from 'react-lottie';
 import AboutPage from '../../Assets/AboutPageDeveloper.json'
-import { CgCPlusPlus } from "react-icons/cg";
-import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiMongodb,
-  DiPython,
-  DiGit,
-} from "react-icons/di";
-import {
-  SiPytorch,
-  SiFirebase,
-  SiNextdotjs,
-} from "react-icons/si";
+// import { CgCPlusPlus } from "react-icons/cg";
+// import {
+//   DiJavascript1,
+//   DiReact,
+//   DiNodejs,
+//   DiMongodb,
+//   DiPython,
+//   DiGit,
+// } from "react-icons/di";
+// import {
+//   SiPytorch,
+//   SiFirebase,
+//   SiNextdotjs,
+// } from "react-icons/si";
 import PyImage from '../../Assets/70163-python-logo.json';
 import CImage from '../../Assets/17288-c-programming-animation.json';
 import JavaScriptImage from '../../Assets/111794-javascript.json';
