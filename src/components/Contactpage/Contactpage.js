@@ -15,12 +15,8 @@ function Contactpage() {
             window.open("https://wa.me/+918156811884");
           }}
         >Say Hello</button> */}
-        <span></span>
         <ContactForm/>
-        <hr className='line' />
-        <p className='copyright'>© Copyright 2023.
-        <br /> 
-        Designed & Built by <span>Vamsi Pachamatla</span></p>
+        
       </Container>
     </div>
   )

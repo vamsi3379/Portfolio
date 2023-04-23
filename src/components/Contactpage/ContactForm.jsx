@@ -52,6 +52,10 @@ const ContactForm = () => {
           Submit
         </Button>
       </Form>
+      {/* <hr className='line' />
+        <p className='copyright'>© Copyright 2023.
+        <br /> 
+        Designed & Built by <span>Vamsi Pachamatla</span></p> */}
     </div>
   );
 };
