@@ -79,7 +79,7 @@
 }
 
 .navbar-nav .nav-link {
-  color: white !important;
+  color: black !important;
   font-size: 16px !important;
   letter-spacing: 1px;
   font-weight: 500 !important;
@@ -138,13 +138,13 @@
 .homepagebackground {
   width: 100%;
   height: 100vh;
-  background-color: #4158d0;
+  /* background-color: #4158d0;
   background-image: linear-gradient(
     43deg,
     #4158d0 0%,
     #c850c0 46%,
     #ffcc70 100%
-  );
+  ); */
 }
 .row {
   padding-top: 80px;
@@ -211,7 +211,6 @@
   margin-top: 50px;
   max-width: 550px;
   height: 400px;
-  background-image: url(../Assets/Web-designer-1024x821.webp);
   background-size: cover;
   background-position: center;
 }
@@ -268,14 +267,14 @@
 
 .aboutpagebackground {
   width: 100%;
-  height: 100vh;
-  background-color: #4158d0;
+  height: 100%;
+  /* background-color: #4158d0;
   background-image: linear-gradient(
     43deg,
     #4158d0 0%,
     #c850c0 46%,
     #ffcc70 100%
-  );
+  ); */
   padding-top: 110px;
 }
 .textbackground {
@@ -324,9 +323,9 @@
   color: #e8e8e8;
 }
 .webimage {
-  max-width: 500px;
-  height: 350px;
-  background-image: url(../Assets/web-removebg-preview.png);
+  max-width: 450px;
+  height: 400px;
+  /* background-image: url(../Assets/web-removebg-preview.png); */
   background-size: cover;
   background-position: center;
 }
@@ -346,13 +345,13 @@
 .projectbackground {
   width: 100%;
   height: 100%;
-  background-color: #4158d0;
+  /* background-color: #4158d0;
   background-image: linear-gradient(
     43deg,
     #4158d0 0%,
     #c850c0 46%,
     #ffcc70 100%
-  );
+  ); */
 }
 .project-section {
   position: relative !important;
@@ -423,13 +422,13 @@
 .contactbackground {
   width: 100%;
   height: 100vh;
-  background-color: #4158d0;
+  /* background-color: #4158d0;
   background-image: linear-gradient(
     43deg,
     #4158d0 0%,
     #c850c0 46%,
     #ffcc70 100%
-  );
+  ); */
   padding-top: 110px;
 }
 .contacthead {
@@ -481,4 +480,26 @@
 }
 .nameFont {
   font-family: 'Cormorant Garamond', serif;
+}
+.tech-icons {
+  font-size: 4.5em !important;
+  margin: 10px !important;
+  padding: 10px !important;
+  opacity: 0.93 !important;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px !important;
+  /* border: 1.7px solid black !important; */
+  vertical-align: middle !important;
+  text-align: center !important;
+  border-radius: 5px !important;
+  display: table !important;
+  /* box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important; */
+  overflow: hidden !important;
+  transition: all 0.4s ease 0s !important;
+}
+.skillshead {
+  text-align: center;
+  font-size: 3.2rem;
+  font-weight: 800;
+  letter-spacing: 1px;
 }

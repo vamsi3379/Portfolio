@@ -8,6 +8,17 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import Lottie from 'react-lottie';
+import HomeImage from '../../Assets/HomeImage.json';
+
+const defaultOptions = {
+  loop: true,
+  autoplay: true, 
+  animationData: HomeImage, 
+  rendererSettings: {
+    preserveAspectRatio: 'xMidYMid slice'
+  }
+};
 
 function Home() {
   return (
@@ -38,7 +49,10 @@ function Home() {
           </Col>
 
           <Col md={5}>
-            <div className="imagedeveloper">
+            <div className="imagedeveloper"> 
+              <Lottie
+                  options={defaultOptions}
+              />
             </div>
           </Col>
         </Row>

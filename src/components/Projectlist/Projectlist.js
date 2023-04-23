@@ -15,63 +15,67 @@ function Projectlist() {
       <Container fluid className="project-section">
         <Container>
           <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-            <Col md={4} className="project-card">
+            <Col xs={6} md={4} className="project-card">
               <ProjectCard
                 imgPath={useradminpanel}
                 isBlog={false}
-                title="Dashboard Panel"
-                description="User Admin Dashboard created with React js, Material UI, Nivo Charts, Formik, Yup, FullCalendar, and Data Grid to build this entire application. This application consists of Light and Dark Mode, four different Charts, three different Data Table Pages, FAQ Page, Form Page, and Calendar Integration."
+                title="UPSC Pre"
+                description="Built an android learning platform application for students to prepare for the most competitive exams conducted by
+                UPSC (Union Public Service Commission) of India while closely collaborating with 3 others. Ranked among top ten UPSC-related applications, the app is available on Playstore with a productivity boost of 20%
+                and user engagement boost of 40% in the past year."
                 ghLink="https://rahul-dashboard-pannel.netlify.app"
               />
             </Col>
 
-            <Col md={4} className="project-card">
+            <Col xs={6} md={4} className="project-card">
               <ProjectCard
                 imgPath={olximage}
                 isBlog={false}
-                title="Olx-Clone"
-                description="Olx-clone builds with react js. using firebase as a backend and deploying in firebase. Olx-Clone is a potential classified advertisement website that categorizes objects in a user-friendly manner & displays them as advertisements.. Classifieds can be posted that involve selling, and buying using React-router, context, react hooks."
-                ghLink="https://olx-clone-rahul.netlify.app/"
+                title="PeekNshop"
+                description="Brought together hundreds of nearby local stores that do not have proper online shopping facilities and displayed the
+                local offers available by accessing the user location with an SDLC implementation using agile methodology. Designed a web application with three other teammates using Angular for the front end and GO language for the back
+                end."
+                ghLink="https://github.com/vamsi3379/peekNshop"
               />
             </Col>
 
-            <Col md={4} className="project-card">
+            <Col xs={6} md={4} className="project-card">
               <ProjectCard
                 imgPath={netfliximage}
                 isBlog={false}
-                title="Netflix-Clone"
-                description="This project is a simplified front-end clone of Netflix. It was created with React js. It uses TMDB (The Movie Data Base ) API and uses the Axios tool. Users can click movie images with embedded YouTube trailers or related videos about the movie."
-                ghLink="https://react-rahul-netflix-clone.netlify.app/"
+                title="Hand-Written-Mathematical-Symbols-Classification"
+                description="The project aims to build a machine-learning model that can recognize various mathematical symbols. We're using a large dataset created by the team, containing 10 symbol patterns. Each team member contributed around 100 symbols, resulting in a dataset of about 400 images. Each image is characterized by a Math Symbol, Label, and Integer Encoding. The Math Symbol is the pattern to be matched, Label is the character equivalent, and Integer Encoding is an integer digit ranging from 0 to 9."
+                ghLink="https://github.com/vamsi3379/Hand-Written-Mathematical-Symbols-Classification"
               />
             </Col>
 
-            <Col md={4} className="project-card">
+            <Col xs={6} md={4} className="project-card">
               <ProjectCard
                 imgPath={gridlinesbuilders}
                 isBlog={false}
-                title="Grid Line Builders"
-                description="Grid line builders is a static webpage built with HTML, CSS, and JavaScript. Users can see images of their work and contact information that helps to connect the home builders through a webpage. webpage builds responsive to multiple sizes of devices."
-                ghLink="https://gridlinesbuilders.in/"
+                title="Bitcoin Mining"
+                description="Bitcoins are a type of cryptocurrency that use cryptographic hashing to limit their supply. The key component of a bitcoin is an input that, when hashed using SHA-256, produces an output smaller than a target value with a certain number of leading zeros. The goal of the project is to use Erlang and the Actor Model to build a solution that efficiently solves this problem on multi-core machines.."
+                ghLink="https://github.com/vamsi3379/DOSP_Project1_Bitcoin_Mining"
               />
             </Col>
 
-            <Col md={4} className="project-card">
+            <Col xs={6} md={4} className="project-card">
               <ProjectCard
                 imgPath={charlespizza}
                 isBlog={false}
-                title="Charlestown Pizza"
-                description="Charlestown pizza is a static website completely build with bootstrap with fully responsive."
-                ghLink="https://rahulvijay81.github.io/Pizzastore-bootstrap/"
+                title="Twitter Clone"
+                description="Built a Twitter clone with a functional engine that supports registration, tweet sending with hashtags and mentions, tweet subscriptions, re-tweets, and live tweet delivery. Developed a tester/simulator to test the engine by simulating multiple users, live connections, and disconnections and implementing a Zipf distribution on subscriber numbers. The client and engine must be separate processes, with multiple independent client processes simulating thousands of clients and a single engine process."
+                ghLink="https://github.com/vamsi3379/DOSP_Project4_TwitterSimulation_Part2"
               />
             </Col>
 
-            <Col md={4} className="project-card">
+            <Col xs={6} md={4} className="project-card">
               <ProjectCard
                 imgPath={todolist}
                 isBlog={false}
-                title="To Do List"
-                description=" To-Do App that build will allow a user to add a task to a list of to-do items. Once the task is added, the user will be able to delete it as completed once it has done."
-                ghLink="https://todolist-rahul81.netlify.app/"
+                title="Gym Posture Correction"
+                description="Gym Posture Corrector helps improve workout performance and posture without a personal trainer. It analyzes body posture and limb movements, comparing them with expert exercises to provide real-time feedback using advanced motion detection. Improve your body's health with our care."
+                ghLink="https://github.com/vamsi3379/GymPostureCorrection"
 
               />
             </Col>

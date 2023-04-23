@@ -18,7 +18,7 @@ function Contactpage() {
         <hr className='line' />
         <p className='copyright'>© Copyright 2023.
         <br /> 
-        Designed & Built by <span>rahulvijay</span></p>
+        Designed & Built by <span>Vamsi Pachamatla</span></p>
       </Container>
     </div>
   )
