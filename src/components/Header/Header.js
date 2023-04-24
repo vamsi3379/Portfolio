@@ -28,9 +28,7 @@ function Header() {
 
 
       <Navbar.Brand className='logotext' as={Link} to='/'>
-        <div>
-          <h4 className='nameFont'>Vamsi</h4>
-        </div>
+        <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}> Vamsi </Nav.Link>
       </Navbar.Brand>
 
       <Navbar.Toggle className='navbar-toggler' aria-controls="responsive-navbar-nav"

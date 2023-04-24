@@ -478,9 +478,9 @@
     display: none;
   }
 }
-.nameFont {
+/* .nameFont {
   font-family: 'Cormorant Garamond', serif;
-}
+} */
 .tech-icons {
   font-size: 4.5em !important;
   margin: 10px !important;

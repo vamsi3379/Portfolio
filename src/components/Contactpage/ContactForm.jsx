@@ -48,9 +48,11 @@ const ContactForm = () => {
           <Form.Label>Message</Form.Label>
           <Form.Control as="textarea" rows={5} placeholder="Enter your message" value={message} onChange={(e) => setMessage(e.target.value)} required />
         </Form.Group>
-        <Button variant="primary" type="submit">
-          Submit
-        </Button>
+        <div style={{textAlign: "center"}}>
+            <Button variant="primary" type="submit">
+                Submit
+            </Button>
+        </div>
       </Form>
       {/* <hr className='line' />
         <p className='copyright'>© Copyright 2023.
