@@ -1,7 +1,7 @@
 import './App.css';
 import { useEffect, useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Preloader from '../src/components/Pre'
+// import Preloader from '../src/components/Pre'
 import Home from './pages/Home.js'
 import About from './pages/About'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -23,7 +23,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Preloader load={load} />
+        {/* <Preloader load={load} />  */}
         <div className="App" id={load ? "no-scroll" : "scroll"}>
           <Routes>
             <Route path='/' element={<Home />}></Route>

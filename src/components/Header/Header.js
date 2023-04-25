@@ -43,7 +43,8 @@ function Header() {
 
 
       <Navbar.Brand className='logotext' as={Link} to='/'>
-        <Nav.Link as={Link} to="/" onClick={() => {updateExpanded(false);}}> Vamsi Pachamatla</Nav.Link>
+        {/* <Nav.Link as={Link} to="/" onClick={() => {updateExpanded(false);}}> Vamsi Pachamatla</Nav.Link> */}
+        <div className='logo'></div>
       </Navbar.Brand>
 
       <Navbar.Toggle className='navbar-toggler' aria-controls="responsive-navbar-nav"
