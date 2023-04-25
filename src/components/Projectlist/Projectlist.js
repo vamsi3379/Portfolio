@@ -5,9 +5,9 @@ import { Container, Row, Col } from 'react-bootstrap'
 import UPSCPre from '../../Assets/UPSC Pre.png'
 import PeekNshop from '../../Assets/PeekNshop.png';
 import HandwrittenSymbols from '../../Assets/Hand-Written-Mathematical-Symbols-Classification.png'
-import gridlinesbuilders from '../../Assets/Gridlinesbuilders.png'
-import charlespizza from '../../Assets/Charlestown-Pizza.png'
-import todolist from '../../Assets/todolist.png'
+import Bitcoin from '../../Assets/Bitcoin.svg'
+import Twitter from '../../Assets/Twitter.png'
+import Gym from '../../Assets/Gym.avif'
 
 function Projectlist() {
   return (
@@ -51,7 +51,7 @@ function Projectlist() {
 
             <Col xs={6} md={4} className="project-card">
               <ProjectCard
-                imgPath={gridlinesbuilders}
+                imgPath={Bitcoin}
                 isBlog={false}
                 title="Bitcoin Mining"
                 description="Bitcoins are a type of cryptocurrency that use cryptographic hashing to limit their supply. The key component of a bitcoin is an input that, when hashed using SHA-256, produces an output smaller than a target value with a certain number of leading zeros. The goal of the project is to use Erlang and the Actor Model to build a solution that efficiently solves this problem on multi-core machines.."
@@ -61,7 +61,7 @@ function Projectlist() {
 
             <Col xs={6} md={4} className="project-card">
               <ProjectCard
-                imgPath={charlespizza}
+                imgPath={Twitter}
                 isBlog={false}
                 title="Twitter Clone"
                 description="Built a Twitter clone with a functional engine that supports registration, tweet sending with hashtags and mentions, tweet subscriptions, re-tweets, and live tweet delivery. Developed a tester/simulator to test the engine by simulating multiple users, live connections, and disconnections and implementing a Zipf distribution on subscriber numbers. The client and engine must be separate processes, with multiple independent client processes simulating thousands of clients and a single engine process."
@@ -71,7 +71,7 @@ function Projectlist() {
 
             <Col xs={6} md={4} className="project-card">
               <ProjectCard
-                imgPath={todolist}
+                imgPath={Gym}
                 isBlog={false}
                 title="Gym Posture Correction"
                 description="Gym Posture Corrector helps improve workout performance and posture without a personal trainer. It analyzes body posture and limb movements, comparing them with expert exercises to provide real-time feedback using advanced motion detection. Improve your body's health with our care."

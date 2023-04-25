@@ -13,13 +13,13 @@ function Header() {
   const [projectsSelected, setProjectsSelected] = useState(false);
   const [contactSelected, setContactSelected] = useState(false);
   useEffect(() => {
-    if (window.location.href === "http://localhost:3000/"){
+    if (window.location.href === "https://vamsipachamatla.com/"){
       setHomeSelected(true)
-    }else if (window.location.href === "http://localhost:3000/about"){
+    }else if (window.location.href === "https://vamsipachamatla.com/about"){
       setAboutSelected(true)
-    }else if (window.location.href === "http://localhost:3000/project"){
+    }else if (window.location.href === "https://vamsipachamatla.com/project"){
       setProjectsSelected(true)
-    }else if (window.location.href === "http://localhost:3000/contact"){
+    }else if (window.location.href === "https://vamsipachamatla.com/contact"){
       setContactSelected(true)
     }
     
@@ -136,7 +136,7 @@ function Header() {
                 onClick={() => {updateExpanded(false);}}
                 className='selected-nav-item rounded' 
               >
-                About
+                Contact
               </Nav.Link>
             </Nav.Item>
           )}
