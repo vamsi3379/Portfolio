@@ -10,6 +10,7 @@ import {
 import { FaLinkedinIn } from "react-icons/fa";
 import Lottie from 'react-lottie';
 import HomeImage from '../../Assets/HomeImage.json';
+// import Aboutpage from '../Aboutpage/Aboutpage';
 
 const defaultOptions = {
   loop: true,
@@ -56,6 +57,7 @@ function Home() {
             </div>
           </Col>
         </Row>
+        {/* <Aboutpage/> */}
       </Container>
     </div>
   )

@@ -2,9 +2,9 @@ import React from 'react'
 import '../../pages/style.css';
 import ProjectCard from "./ProjectCard";
 import { Container, Row, Col } from 'react-bootstrap'
-import useradminpanel from '../../Assets/Admin-Panel-Dashboard.png'
-import olximage from '../../Assets/olx-clone image.png'
-import netfliximage from '../../Assets/React-App-netflix-clone.png'
+import UPSCPre from '../../Assets/UPSC Pre.png'
+import PeekNshop from '../../Assets/PeekNshop.png';
+import HandwrittenSymbols from '../../Assets/Hand-Written-Mathematical-Symbols-Classification.png'
 import gridlinesbuilders from '../../Assets/Gridlinesbuilders.png'
 import charlespizza from '../../Assets/Charlestown-Pizza.png'
 import todolist from '../../Assets/todolist.png'
@@ -17,19 +17,19 @@ function Projectlist() {
           <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
             <Col xs={6} md={4} className="project-card">
               <ProjectCard
-                imgPath={useradminpanel}
+                imgPath={UPSCPre}
                 isBlog={false}
                 title="UPSC Pre"
                 description="Built an android learning platform application for students to prepare for the most competitive exams conducted by
                 UPSC (Union Public Service Commission) of India while closely collaborating with 3 others. Ranked among top ten UPSC-related applications, the app is available on Playstore with a productivity boost of 20%
                 and user engagement boost of 40% in the past year."
-                ghLink="https://rahul-dashboard-pannel.netlify.app"
+                ghLink="https://play.google.com/store/apps/details?id=com.upscpre.iasprep&hl=en&gl=US"
               />
             </Col>
 
             <Col xs={6} md={4} className="project-card">
               <ProjectCard
-                imgPath={olximage}
+                imgPath={PeekNshop}
                 isBlog={false}
                 title="PeekNshop"
                 description="Brought together hundreds of nearby local stores that do not have proper online shopping facilities and displayed the
@@ -41,7 +41,7 @@ function Projectlist() {
 
             <Col xs={6} md={4} className="project-card">
               <ProjectCard
-                imgPath={netfliximage}
+                imgPath={HandwrittenSymbols}
                 isBlog={false}
                 title="Hand-Written-Mathematical-Symbols-Classification"
                 description="The project aims to build a machine-learning model that can recognize various mathematical symbols. We're using a large dataset created by the team, containing 10 symbol patterns. Each team member contributed around 100 symbols, resulting in a dataset of about 400 images. Each image is characterized by a Math Symbol, Label, and Integer Encoding. The Math Symbol is the pattern to be matched, Label is the character equivalent, and Integer Encoding is an integer digit ranging from 0 to 9."
