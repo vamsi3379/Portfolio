@@ -68,31 +68,31 @@ function Aboutpage() {
                 <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
                 <Col xs={4} md={2} className="tech-icons">
                     <DiPython />
-                    <h5>Python</h5>
+                    <h5 style={{color:'black'}}>Python</h5>
                   </Col>
                   <Col xs={4} md={2} className="tech-icons">
                     <CgCPlusPlus />
-                    <h5>C++</h5>
+                    <h5 style={{color:'black'}}>C++</h5>
                   </Col>
                   <Col xs={4} md={2} className="tech-icons">
                     <DiJava />
-                    <h5>Java</h5>
+                    <h5 style={{color:'black'}}>Java</h5>
                   </Col>
                   <Col xs={4} md={2} className="tech-icons">
                     <DiJavascript1 />
-                    <h5>Jav Script</h5>
+                    <h5 style={{color:'black'}}>Jav Script</h5>
                   </Col>
                   <Col xs={4} md={2} className="tech-icons">
                     <TbBrandTypescript />
-                    <h5>Type Script</h5>
+                    <h5 style={{color:'black'}}>Type Script</h5>
                   </Col>
                   <Col xs={4} md={2} className="tech-icons">
                     <DiErlang />
-                    <h5>Erlang</h5>
+                    <h5 style={{color:'black'}}>Erlang</h5>
                   </Col>
                   <Col xs={4} md={2} className="tech-icons">
                     <TbBrandGolang />
-                    <h5>Go Lang</h5>
+                    <h5 style={{color:'black'}}>Go Lang</h5>
                   </Col>
                 </Row>
                 <Row style={{ justifyContent: "center" }}>
@@ -101,47 +101,47 @@ function Aboutpage() {
                 <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
                   <Col xs={4} md={2} className="tech-icons">
                     <DiNodejs />
-                    <h5>Node.js</h5>
+                    <h5 style={{color:'black'}}>Node.js</h5>
                   </Col>
                   <Col xs={4} md={2} className="tech-icons">
                     <DiReact />
-                    <h5>React</h5>
+                    <h5 style={{color:'black'}}>React</h5>
                   </Col>
                   <Col xs={4} md={2} className="tech-icons">
                     <DiMongodb />
-                    <h5>MongoDB</h5>
+                    <h5 style={{color:'black'}}>MongoDB</h5>
                   </Col>
                   <Col xs={4} md={2} className="tech-icons">
                     <DiAngularSimple />
-                    <h5>Angular</h5>
+                    <h5 style={{color:'black'}}>Angular</h5>
                   </Col>
                   <Col xs={4} md={2} className="tech-icons">
                     <SiDjango />
-                    <h5>Django</h5>
+                    <h5 style={{color:'black'}}>Django</h5>
                   </Col>
                   <Col xs={4} md={2} className="tech-icons">
                     <BsFiletypeCss />
-                    <h5>CSS</h5>
+                    <h5 style={{color:'black'}}>CSS</h5>
                   </Col>
                   <Col xs={4} md={2} className="tech-icons">
                     <AiFillHtml5 />
-                    <h5>HTML 5</h5>
+                    <h5 style={{color:'black'}}>HTML 5</h5>
                   </Col>
                   <Col xs={4} md={2} className="tech-icons">
                     <DiMysql />
-                    <h5>SQL</h5>
+                    <h5 style={{color:'black'}}>SQL</h5>
                   </Col>
                   <Col xs={4} md={2} className="tech-icons">
                     <SiPostgresql />
-                    <h5>PostgreSQL</h5>
+                    <h5 style={{color:'black'}}>PostgreSQL</h5>
                   </Col>
                   <Col xs={4} md={2} className="tech-icons">
                     <SiPostman />
-                    <h5>Postman</h5>
+                    <h5 style={{color:'black'}}>Postman</h5>
                   </Col>
                   <Col xs={4} md={2} className="tech-icons">
                     <DiGit />
-                    <h5>Git</h5>
+                    <h5 style={{color:'black'}}>Git</h5>
                   </Col>
                 </Row>
                 <Row style={{ justifyContent: "center" }}>

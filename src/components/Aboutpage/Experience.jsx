@@ -39,7 +39,7 @@ const Experience = () => (
                 date={<span style={{ color: "black" }}>
                     2022 - 2022
                 </span>}
-                iconStyle={{ background: 'black', color: '#fff' }}
+                iconStyle={{ background: 'black', color: '#4158d0' }}
                 icon={<MdOutlineWork />}
             >
                 <h3 className="vertical-timeline-element-title" style={{color:"black", fontFamily:"aveneir next"}}>Associate Nodejs Developer</h3>
@@ -56,7 +56,7 @@ const Experience = () => (
                 date={<span style={{ color: "black" }}>
                     2022 - 2022
                 </span>}
-                iconStyle={{ background: 'black', color: '#fff' }}
+                iconStyle={{ background: 'black', color: '#4158d0' }}
                 icon={<MdOutlineWork />}
             >
                 <h3 className="vertical-timeline-element-title" style={{color:"black", fontFamily:"aveneir next"}}>Full Stack Web Developer Intern</h3>

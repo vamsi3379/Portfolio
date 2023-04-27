@@ -77,7 +77,7 @@
   opacity: 0.9 !important;
 }
 .logo{
-  background-image: url(../Assets/Vamsi.png);
+  /* background-image: url(../Assets/Vamsi.png); */
   background-size: cover;
   width: 90px;
   height: 80px;
@@ -513,7 +513,7 @@
   /* box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important; */
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
-  color:#4158d0
+  color:#4158d0;
 }
 .skillshead {
   text-align: center;
