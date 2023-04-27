@@ -41,83 +41,6 @@ const defaultOptions = {
       preserveAspectRatio: 'xMidYMid slice'
     }
   };
-  // const COptions = {
-  //   loop: true,
-  //   autoplay: true, 
-  //   animationData: CImage, 
-  //   rendererSettings: {
-  //     preserveAspectRatio: 'xMidYMid slice'
-  //   }
-  // };
-  // const JavaOptions = {
-  //   loop: true,
-  //   speed: 2.5,
-  //   autoplay: true, 
-  //   animationData: JavaImage, 
-  //   rendererSettings: {
-  //     preserveAspectRatio: 'xMidYMid slice'
-  //   },
-    
-  // };
-  // const SwiftOptions = {
-  //   loop: true,
-  //   autoplay: true, 
-  //   animationData: SwiftImage, 
-  //   speed:0.1,
-  //   rendererSettings: {
-  //     preserveAspectRatio: 'xMidYMid slice'
-  //   }
-  // };
-  // const MysqlOptions = {
-  //   loop: true,
-  //   autoplay: true, 
-  //   animationData: MysqlImage, 
-  //   rendererSettings: {
-  //     preserveAspectRatio: 'xMidYMid slice'
-  //   }
-  // };
-  // const ReactOptions = {
-  //   loop: true,
-  //   autoplay: true, 
-  //   animationData: ReactImage, 
-  //   rendererSettings: {
-  //     preserveAspectRatio: 'xMidYMid slice'
-  //   }
-  // };
-  // const JavaScriptOptions = {
-  //   loop: true,
-  //   autoplay: true, 
-  //   animationData: JavaScriptImage, 
-  //   rendererSettings: {
-  //     preserveAspectRatio: 'xMidYMid slice'
-  //   }
-  // };
-  // const HTMLOptions = {
-  //   loop: true,
-  //   autoplay: true, 
-  //   animationData: HTMLImage, 
-  //   rendererSettings: {
-  //     preserveAspectRatio: 'xMidYMid slice'
-  //   },
-  //   speed: 1.5 // Add the speed property here
-  // };
-  
-  // const AngularOptions = {
-  //   loop: true,
-  //   autoplay: true, 
-  //   animationData: AngularImage, 
-  //   rendererSettings: {
-  //     preserveAspectRatio: 'xMidYMid slice'
-  //   }
-  // };
-  // const MongoOptions = {
-  //   loop: true,
-  //   autoplay: true, 
-  //   animationData: MongoImage, 
-  //   rendererSettings: {
-  //     preserveAspectRatio: 'xMidYMid slice'
-  //   }
-  // };
 
 function Aboutpage() {
     return (
@@ -132,15 +55,15 @@ function Aboutpage() {
                         </div>
                     </Col>
                     <Col md={7} >
-                        <h3 className='aboutmetext'>About Me</h3>
-                        <p className='aboutdetails'>As a graduate student assistant for the Malt Group at the University of Florida, I helped to develop a real-time traffic monitoring system and designed and developed a fully functional web application using a variety of technologies. Prior to this, I worked at Celebal Technologies as an Associate Node.js Developer, where I pioneered a Microsoft Teams Bot application using Node.js, Microsoft Bot Framework Composer, and Azure Cloud. During my internship as a full-stack web developer at Fintroops Fintech Solutions Pvt. Ltd., I created full-stack web applications for a car trading platform, improving user engagement and experience. In addition to my professional experience, I have worked on several projects that have put my deep learning, natural language processing, and data science skills to use.
+                        <h3 className='aboutmetext' style={{fontFamily:"aveneir next"}}>About Me</h3>
+                        <p className='aboutdetails' style={{fontFamily:"aveneir next"}}>As a graduate student assistant for the Malt Group at the University of Florida, I helped to develop a real-time traffic monitoring system and designed and developed a fully functional web application using a variety of technologies. Prior to this, I worked at Celebal Technologies as an Associate Node.js Developer, where I pioneered a Microsoft Teams Bot application using Node.js, Microsoft Bot Framework Composer, and Azure Cloud. During my internship as a full-stack web developer at Fintroops Fintech Solutions Pvt. Ltd., I created full-stack web applications for a car trading platform, improving user engagement and experience. In addition to my professional experience, I have worked on several projects that have put my deep learning, natural language processing, and data science skills to use.
                         </p>
                         
                     </Col>
                     
                 </Row>
                 <Row style={{ justifyContent: "center" }}>
-                    <h2 className='skillshead'>Languages</h2>
+                    <h3 className='skillshead' style={{fontFamily:"aveneir next"}}>Languages</h3>
                 </Row>
                 <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
                 <Col xs={4} md={2} className="tech-icons">
@@ -173,7 +96,7 @@ function Aboutpage() {
                   </Col>
                 </Row>
                 <Row style={{ justifyContent: "center" }}>
-                    <h2 className='skillshead'>Technologies</h2>
+                    <h3 className='skillshead' style={{fontFamily:"aveneir next"}}>Technologies</h3>
                 </Row>
                 <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
                   <Col xs={4} md={2} className="tech-icons">
@@ -222,7 +145,7 @@ function Aboutpage() {
                   </Col>
                 </Row>
                 <Row style={{ justifyContent: "center" }}>
-                    <h2 className='skillshead'>Experience</h2>
+                    <h3 className='skillshead' style={{fontFamily:"aveneir next"}}>Experience</h3>
                 </Row>
                 <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
                     <Experience/>

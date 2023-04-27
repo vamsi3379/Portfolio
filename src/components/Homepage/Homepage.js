@@ -27,8 +27,8 @@ function Home() {
       <Container>
         <Row>
           <Col md={7}>
-            <h2 className='headtext'>Hello <span className='wave'>👋 </span></h2>
-            <h2 className='nametext'>I'm Vamsi Pachamatla</h2>
+            <h2 className='headtext' style={{fontFamily:"aveneir next"}}>Hello <span className='wave'>👋 </span></h2>
+            <h2 className='nametext' style={{fontFamily:"aveneir next"}}>I'm Vamsi Pachamatla</h2>
             <span></span>
             <Text /> 
             <button onClick={() => {
