@@ -9,14 +9,14 @@ function Header() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
   const [homeSelected, setHomeSelected] = useState(false);
-  const [aboutSelected, setAboutSelected] = useState(false);
+  // const [aboutSelected, setAboutSelected] = useState(false);
   const [projectsSelected, setProjectsSelected] = useState(false);
   const [contactSelected, setContactSelected] = useState(false);
   useEffect(() => {
     if (window.location.href === "https://vamsipachamatla.com/"){
       setHomeSelected(true)
-    }else if (window.location.href === "https://vamsipachamatla.com/about"){
-      setAboutSelected(true)
+    // }else if (window.location.href === "https://vamsipachamatla.com/about"){
+    //   setAboutSelected(true)
     }else if (window.location.href === "https://vamsipachamatla.com/project"){
       setProjectsSelected(true)
     }else if (window.location.href === "https://vamsipachamatla.com/contact"){
@@ -82,7 +82,7 @@ function Header() {
             </Nav.Item>
           )}
 
-          {aboutSelected&&(
+          {/* {aboutSelected&&(
             <Nav.Item>
               <Nav.Link
                 as={Link}
@@ -104,7 +104,7 @@ function Header() {
                 About
               </Nav.Link>
             </Nav.Item>
-          )}
+          )} */}
           {projectsSelected&&(
             <Nav.Item>
               <Nav.Link

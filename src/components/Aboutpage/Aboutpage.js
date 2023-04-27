@@ -31,16 +31,8 @@ import {
 import {
   BsFiletypeCss
 } from "react-icons/bs";
-// import PyImage from '../../Assets/70163-python-logo.json';
-// import CImage from '../../Assets/17288-c-programming-animation.json';
-// import JavaScriptImage from '../../Assets/111794-javascript.json';
-// import JavaImage from '../../Assets/JavaImage.json';
-// import SwiftImage from '../../Assets/99073-swift-logo.json';
-// import MysqlImage from '../../Assets/112194-mysql.json';
-// import ReactImage from '../../Assets/React_Image.json';
-// import HTMLImage from '../../Assets/111797-html5.json';
-// import AngularImage from '../../Assets/121147-angular.json';
-// import MongoImage from '../../Assets/63210-mongo.json';
+import Experience from './Experience'; 
+
 const defaultOptions = {
     loop: true,
     autoplay: true, 
@@ -229,58 +221,12 @@ function Aboutpage() {
                     <h5>Git</h5>
                   </Col>
                 </Row>
-                {/* <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-                    <Col xs={4} md={2} className="tech-icons">
-                        <Lottie
-                            options={PythonOptions}
-                        />
-                    </Col>
-                    <Col xs={4} md={2} className="tech-icons">
-                        <Lottie
-                            options={MysqlOptions}
-                        />
-                    </Col>
-                    <Col xs={4} md={2} className="tech-icons">
-                        <Lottie
-                            options={JavaScriptOptions}
-                        />
-                    </Col>
-                    <Col xs={4} md={2} className="tech-icons">
-                        <Lottie
-                            options={ReactOptions}
-                        />
-                    </Col>
-                    <Col xs={4} md={2} className="tech-icons">
-                        <Lottie
-                            options={HTMLOptions}
-                        />
-                    </Col>
-                    <Col xs={4} md={2} className="tech-icons">
-                        <Lottie
-                            options={AngularOptions}
-                        />
-                    </Col>
-                    <Col xs={4} md={2} className="tech-icons">
-                        <Lottie
-                            options={MongoOptions}
-                        />
-                    </Col>
-                    <Col xs={4} md={2} className="tech-icons">
-                        <Lottie
-                            options={COptions}
-                        />
-                    </Col>
-                    <Col xs={4} md={2} className="tech-icons">
-                        <Lottie
-                            options={JavaOptions}
-                        />
-                    </Col>
-                    <Col xs={4} md={2} className="tech-icons">
-                        <Lottie
-                            options={SwiftOptions}
-                        />
-                    </Col>
-                </Row> */}
+                <Row style={{ justifyContent: "center" }}>
+                    <h2 className='skillshead'>Experience</h2>
+                </Row>
+                <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+                    <Experience/>
+                </Row>
             </Container>
         </div>
     )
