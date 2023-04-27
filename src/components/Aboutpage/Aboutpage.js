@@ -132,19 +132,20 @@ function Aboutpage() {
         <div className='aboutpagebackground'>
             <Container>
                 <Row className='textbackground'>
-                    <Col md={7} >
-                        <h3 className='aboutmetext'>About Me</h3>
-                        <p className='aboutdetails'>As a graduate student assistant for the Malt Group at the University of Florida, I helped to develop a real-time traffic monitoring system and designed and developed a fully functional web application using a variety of technologies. Prior to this, I worked at Celebal Technologies as an Associate Node.js Developer, where I pioneered a Microsoft Teams Bot application using Node.js, Microsoft Bot Framework Composer, and Azure Cloud. During my internship as a full-stack web developer at Fintroops Fintech Solutions Pvt. Ltd., I created full-stack web applications for a car trading platform, improving user engagement and experience. In addition to my professional experience, I have worked on several projects that have put my deep learning, natural language processing, and data science skills to use.
-                        </p>
-                        
-                    </Col>
-                    <Col md={5}>
+                <Col md={5}>
                         <div className="webimage">
                             <Lottie
                                 options={defaultOptions}
                             />
                         </div>
                     </Col>
+                    <Col md={7} >
+                        <h3 className='aboutmetext'>About Me</h3>
+                        <p className='aboutdetails'>As a graduate student assistant for the Malt Group at the University of Florida, I helped to develop a real-time traffic monitoring system and designed and developed a fully functional web application using a variety of technologies. Prior to this, I worked at Celebal Technologies as an Associate Node.js Developer, where I pioneered a Microsoft Teams Bot application using Node.js, Microsoft Bot Framework Composer, and Azure Cloud. During my internship as a full-stack web developer at Fintroops Fintech Solutions Pvt. Ltd., I created full-stack web applications for a car trading platform, improving user engagement and experience. In addition to my professional experience, I have worked on several projects that have put my deep learning, natural language processing, and data science skills to use.
+                        </p>
+                        
+                    </Col>
+                    
                 </Row>
                 <Row style={{ justifyContent: "center" }}>
                     <h2 className='skillshead'>Languages</h2>

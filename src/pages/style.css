@@ -530,3 +530,7 @@
   width: 100%;
   object-fit: cover; /* Ensures the image covers the entire element */
 }
+
+.selected-nav-item{
+  background-color: #D8c0fd;
+}

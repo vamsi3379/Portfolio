@@ -9,8 +9,8 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import Lottie from 'react-lottie';
-import HomeImage from '../../Assets/HomeImage.json';
-// import Aboutpage from '../Aboutpage/Aboutpage';
+import HomeImage from '../../Assets/RJPmpgB4oS.json';
+import Aboutpage from '../Aboutpage/Aboutpage';
 
 const defaultOptions = {
   loop: true,
@@ -30,7 +30,7 @@ function Home() {
             <h2 className='headtext'>Hello <span className='wave'>👋 </span></h2>
             <h2 className='nametext'>I'm Vamsi Pachamatla</h2>
             <span></span>
-            <Text />
+            <Text /> 
             <button onClick={() => {
               window.open("https://github.com/vamsi3379");
             }}
@@ -57,7 +57,7 @@ function Home() {
             </div>
           </Col>
         </Row>
-        {/* <Aboutpage/> */}
+        <Aboutpage/>
       </Container>
     </div>
   )
