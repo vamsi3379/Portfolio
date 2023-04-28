@@ -32,6 +32,9 @@ import {
   BsFiletypeCss
 } from "react-icons/bs";
 import Experience from './Experience'; 
+import { motion } from "framer-motion";
+
+
 
 const defaultOptions = {
     loop: true,
@@ -67,32 +70,46 @@ function Aboutpage() {
                 </Row>
                 <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
                 <Col xs={4} md={2} className="tech-icons">
-                    <DiPython />
-                    <h5 style={{color:'black'}}>Python</h5>
+                  <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                      <DiPython />
+                      <h5 style={{color:'black'}}>Python</h5>
+                  </motion.div>
                   </Col>
                   <Col xs={4} md={2} className="tech-icons">
-                    <CgCPlusPlus />
-                    <h5 style={{color:'black'}}>C++</h5>
+                    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                      <CgCPlusPlus />
+                      <h5 style={{color:'black'}}>C++</h5>
+                    </motion.div>
                   </Col>
                   <Col xs={4} md={2} className="tech-icons">
-                    <DiJava />
-                    <h5 style={{color:'black'}}>Java</h5>
+                    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                      <DiJava />
+                      <h5 style={{color:'black'}}>Java</h5>
+                    </motion.div>
                   </Col>
                   <Col xs={4} md={2} className="tech-icons">
-                    <DiJavascript1 />
-                    <h5 style={{color:'black'}}>Jav Script</h5>
+                    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                      <DiJavascript1 />
+                      <h5 style={{color:'black'}}>Java Script</h5>
+                    </motion.div>
                   </Col>
                   <Col xs={4} md={2} className="tech-icons">
-                    <TbBrandTypescript />
-                    <h5 style={{color:'black'}}>Type Script</h5>
+                    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                      <TbBrandTypescript />
+                      <h5 style={{color:'black'}}>Type Script</h5>
+                    </motion.div>
                   </Col>
                   <Col xs={4} md={2} className="tech-icons">
-                    <DiErlang />
-                    <h5 style={{color:'black'}}>Erlang</h5>
+                    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                      <DiErlang />
+                      <h5 style={{color:'black'}}>Erlang</h5>
+                    </motion.div>
                   </Col>
                   <Col xs={4} md={2} className="tech-icons">
-                    <TbBrandGolang />
-                    <h5 style={{color:'black'}}>Go Lang</h5>
+                    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                      <TbBrandGolang />
+                      <h5 style={{color:'black'}}>Go Lang</h5>
+                    </motion.div>
                   </Col>
                 </Row>
                 <Row style={{ justifyContent: "center" }}>
@@ -100,48 +117,70 @@ function Aboutpage() {
                 </Row>
                 <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
                   <Col xs={4} md={2} className="tech-icons">
-                    <DiNodejs />
-                    <h5 style={{color:'black'}}>Node.js</h5>
+                    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                      <DiNodejs />
+                      <h5 style={{color:'black'}}>Node.js</h5>
+                    </motion.div>
                   </Col>
                   <Col xs={4} md={2} className="tech-icons">
-                    <DiReact />
-                    <h5 style={{color:'black'}}>React</h5>
+                    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                      <DiReact />
+                      <h5 style={{color:'black'}}>React</h5>
+                    </motion.div>
                   </Col>
                   <Col xs={4} md={2} className="tech-icons">
-                    <DiMongodb />
-                    <h5 style={{color:'black'}}>MongoDB</h5>
+                    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                      <DiMongodb />
+                      <h5 style={{color:'black'}}>MongoDB</h5>
+                    </motion.div>
                   </Col>
                   <Col xs={4} md={2} className="tech-icons">
-                    <DiAngularSimple />
-                    <h5 style={{color:'black'}}>Angular</h5>
+                    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                      <DiAngularSimple />
+                      <h5 style={{color:'black'}}>Angular</h5>
+                    </motion.div>
                   </Col>
                   <Col xs={4} md={2} className="tech-icons">
-                    <SiDjango />
-                    <h5 style={{color:'black'}}>Django</h5>
+                    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                      <SiDjango />
+                      <h5 style={{color:'black'}}>Django</h5>
+                    </motion.div>
                   </Col>
                   <Col xs={4} md={2} className="tech-icons">
-                    <BsFiletypeCss />
-                    <h5 style={{color:'black'}}>CSS</h5>
+                    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                      <BsFiletypeCss />
+                      <h5 style={{color:'black'}}>CSS</h5>
+                    </motion.div>
                   </Col>
                   <Col xs={4} md={2} className="tech-icons">
-                    <AiFillHtml5 />
-                    <h5 style={{color:'black'}}>HTML 5</h5>
+                    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                      <AiFillHtml5 />
+                      <h5 style={{color:'black'}}>HTML 5</h5>
+                    </motion.div>
                   </Col>
                   <Col xs={4} md={2} className="tech-icons">
-                    <DiMysql />
-                    <h5 style={{color:'black'}}>SQL</h5>
+                    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                      <DiMysql />
+                      <h5 style={{color:'black'}}>SQL</h5>
+                    </motion.div>
                   </Col>
                   <Col xs={4} md={2} className="tech-icons">
-                    <SiPostgresql />
-                    <h5 style={{color:'black'}}>PostgreSQL</h5>
+                    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                      <SiPostgresql />
+                      <h5 style={{color:'black'}}>PostgreSQL</h5>
+                    </motion.div>
                   </Col>
                   <Col xs={4} md={2} className="tech-icons">
-                    <SiPostman />
-                    <h5 style={{color:'black'}}>Postman</h5>
+                    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                      <SiPostman />
+                      <h5 style={{color:'black'}}>Postman</h5>
+                    </motion.div>
                   </Col>
                   <Col xs={4} md={2} className="tech-icons">
-                    <DiGit />
-                    <h5 style={{color:'black'}}>Git</h5>
+                    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                      <DiGit />
+                      <h5 style={{color:'black'}}>Git</h5>
+                    </motion.div>
                   </Col>
                 </Row>
                 <Row style={{ justifyContent: "center" }}>
