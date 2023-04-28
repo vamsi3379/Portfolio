@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from "react-router-dom";
 import '../../pages/style.css';
+import { motion } from "framer-motion";
 
 function Header() {
   const [expand, updateExpanded] = useState(false);
@@ -68,7 +69,15 @@ function Header() {
                 onClick={() => {updateExpanded(false);}}
                 className='selected-nav-item rounded' 
               >
-                Home
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.5 }}
+                  whileHover={{ scale: 1.4, color:'#4158d0' }} 
+                  whileTap={{ scale: 0.9 }}
+                >
+                  Home
+                </motion.div>
               </Nav.Link>
             </Nav.Item>
           )}
@@ -79,7 +88,15 @@ function Header() {
                 to="/"
                 onClick={() => {updateExpanded(false);}}
               >
-                Home
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.5 }}
+                  whileHover={{ scale: 1.4, color:'#4158d0' }} 
+                  whileTap={{ scale: 0.9 }}
+                >
+                  Home
+                </motion.div>
               </Nav.Link>
             </Nav.Item>
           )}
@@ -115,7 +132,15 @@ function Header() {
                 onClick={() => {updateExpanded(false);}}
                 className='selected-nav-item rounded' 
               >
-                Projects
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.5 }}
+                  whileHover={{ scale: 1.4, color:'#4158d0' }} 
+                  whileTap={{ scale: 0.9 }}
+                >
+                  Projects
+                </motion.div>
               </Nav.Link>
             </Nav.Item>
           )}
@@ -126,7 +151,15 @@ function Header() {
                 to="/project"
                 onClick={() => {updateExpanded(false);}}
               >
-                Projects
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.5 }}
+                  whileHover={{ scale: 1.4, color:'#4158d0' }} 
+                  whileTap={{ scale: 0.9 }}
+                >
+                  Projects
+                </motion.div>
               </Nav.Link>
             </Nav.Item>
           )}
@@ -139,7 +172,15 @@ function Header() {
                 onClick={() => {updateExpanded(false);}}
                 className='selected-nav-item rounded' 
               >
-                Contact
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.5 }}
+                  whileHover={{ scale: 1.4, color:'#4158d0' }} 
+                  whileTap={{ scale: 0.9 }}
+                >
+                  Contact
+                </motion.div>
               </Nav.Link>
             </Nav.Item>
           )}
@@ -150,7 +191,15 @@ function Header() {
                 to="/contact"
                 onClick={() => {updateExpanded(false);}}
               >
-                Contact
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.5 }}
+                  whileHover={{ scale: 1.4, color:'#4158d0' }} 
+                  whileTap={{ scale: 0.9 }}
+                >
+                  Contact
+                </motion.div>
               </Nav.Link>
             </Nav.Item>
           )}

@@ -5,6 +5,7 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import {MdOutlineWork} from "react-icons/md";
+import { motion } from "framer-motion";
 
 const Experience = () => (
     <>
@@ -14,6 +15,7 @@ const Experience = () => (
       background-color: black;
     }
   `}</style>
+          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
                 contentStyle={{ background: '#4158d0', color: '#fff' }}
@@ -32,6 +34,7 @@ const Experience = () => (
                   <li style={{fontFamily:"aveneir next"}}>Implemented a high-availability deployment strategy using Kubernetes and Docker services on AWS, ensuring 0 downtime and seamless updates across multiple cluster nodes.</li>
                 </ul>
             </VerticalTimelineElement>
+
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
                 contentStyle={{ background: '#4158d0', color: '#fff' }}
@@ -66,7 +69,7 @@ const Experience = () => (
                   <li style={{fontFamily:"aveneir next"}}>Improved user experience by 20% and increased engagement by 15% through contributions to development of useful packages and features, leading to an increase in audience capture.</li>
                 </ul>
             </VerticalTimelineElement>
-
+            </motion.div>
         </VerticalTimeline>
     </>
 );
