@@ -8,7 +8,6 @@ import HandwrittenSymbols from '../../Assets/Hand-Written-Mathematical-Symbols-C
 import Bitcoin from '../../Assets/Bitcoin.svg'
 import Twitter from '../../Assets/Twitter.png'
 import Gym from '../../Assets/Gym.avif'
-
 function Projectlist() {
   return (
     <div className="projectbackground">
