@@ -10,7 +10,6 @@ import {
 import { FaLinkedinIn } from "react-icons/fa";
 import Lottie from 'react-lottie';
 import HomeImage from '../../Assets/RJPmpgB4oS.json';
-import Aboutpage from '../Aboutpage/Aboutpage';
 
 const defaultOptions = {
   loop: true,
@@ -23,7 +22,7 @@ const defaultOptions = {
 
 function Home() {
   return (
-    <div className='homepagebackground'>
+    <div className='homepagebackground d-flex align-items-center justify-content-center'>
       <Container>
         <Row>
           <Col md={7}>
