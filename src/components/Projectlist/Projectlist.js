@@ -17,7 +17,7 @@ function Projectlist() {
             <h3 className='skillshead' style={{fontFamily:"aveneir next"}}>Projects</h3>
         </Row>
           <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-            <Col xs={6} md={4} className="project-card">
+            <Col xs={12} md={4} className="project-card">
               <ProjectCard
                 imgPath={UPSCPre}
                 isBlog={false}
@@ -29,7 +29,7 @@ function Projectlist() {
               />
             </Col>
 
-            <Col xs={6} md={4} className="project-card">
+            <Col xs={12} md={4} className="project-card">
               <ProjectCard
                 imgPath={PeekNshop}
                 isBlog={false}
@@ -41,7 +41,7 @@ function Projectlist() {
               />
             </Col>
 
-            <Col xs={6} md={4} className="project-card">
+            <Col xs={12} md={4} className="project-card">
               <ProjectCard
                 imgPath={HandwrittenSymbols}
                 isBlog={false}
@@ -51,7 +51,7 @@ function Projectlist() {
               />
             </Col>
 
-            <Col xs={6} md={4} className="project-card">
+            <Col xs={12} md={4} className="project-card">
               <ProjectCard
                 imgPath={Bitcoin}
                 isBlog={false}
@@ -61,7 +61,7 @@ function Projectlist() {
               />
             </Col>
 
-            <Col xs={6} md={4} className="project-card">
+            <Col xs={12} md={4} className="project-card">
               <ProjectCard
                 imgPath={Twitter}
                 isBlog={false}
@@ -71,7 +71,7 @@ function Projectlist() {
               />
             </Col>
 
-            <Col xs={6} md={4} className="project-card">
+            <Col xs={12} md={4} className="project-card">
               <ProjectCard
                 imgPath={Gym}
                 isBlog={false}

@@ -705,3 +705,8 @@
   .text-center {
       text-align: center!important;
   }
+  @media (max-width: 767.98px) {
+    .spacingEmail {
+      margin-top: 5px;
+    }
+  }

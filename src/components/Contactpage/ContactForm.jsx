@@ -50,7 +50,7 @@ const ContactForm = () => {
               <div className="form-group col-md-6">
                 <input style={{fontFamily:"aveneir next"}} type="text" placeholder="Enter your name" value={name} onChange={(e) => setName(e.target.value)} required />
               </div>
-              <div className="form-group col-md-6">
+              <div className="form-group col-md-6 spacingEmail">
                 <input style={{fontFamily:"aveneir next"}} type="email" placeholder="Enter your email" value={email} onChange={(e) => setEmail(e.target.value)} required/>
               </div>
               <div className="form-group col-md-12 contactmessage" style={{marginTop:"20px", marginBottom:"20px"}}>
