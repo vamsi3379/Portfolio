@@ -12,7 +12,7 @@ const Experience = () => (
     <>
     <Container>
       <Row style={{ justifyContent: "center" }}>
-          <h3 className='skillshead' style={{fontFamily:"aveneir next"}}>Experience</h3>
+          <h3 className='skillshead' style={{fontFamily:"aveneir next", marginBottom:"20px"}}>Experience</h3>
       </Row>
       <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
         <VerticalTimeline>

@@ -2,7 +2,6 @@ import './App.css';
 import { useEffect, useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import Preloader from '../src/components/Pre'
-import Home from './pages/Home.js'
 import About from './pages/About'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Project from './pages/Project';
