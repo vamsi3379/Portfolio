@@ -38,10 +38,6 @@ function Home() {
               window.open("https://www.linkedin.com/in/vamsi-pachamatla-0b268b196/");
             }}
               className='socailmediabtn'><FaLinkedinIn className='icon' /></button>
-            {/* <button onClick={() => {
-              window.open("https://twitter.com/rahulvijay8156");
-            }}
-              className='socailmediabtn'><AiOutlineTwitter className='icon' /></button> */}
             <button onClick={() => {
               window.open("https://instagram.com/vamsi_pachamatla?igshid=YmMyMTA2M2Y=");
             }}
