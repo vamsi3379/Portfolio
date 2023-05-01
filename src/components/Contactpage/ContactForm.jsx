@@ -31,32 +31,6 @@ const ContactForm = () => {
 
   return (
     <>
-    {/* <div className="container">
-        {showSuccessMessage && (
-        <Alert variant="success" onClose={() => setShowSuccessMessage(false)} dismissible>
-          Message sent successfully!
-        </Alert>
-      )}
-      <Form onSubmit={handleSubmit}>
-        <Form.Group className="mb-3" controlId="formName">
-          <Form.Label>Name</Form.Label>
-          <Form.Control type="text" placeholder="Enter your name" value={name} onChange={(e) => setName(e.target.value)} required />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formEmail">
-          <Form.Label>Email address</Form.Label>
-          <Form.Control type="email" placeholder="Enter your email" value={email} onChange={(e) => setEmail(e.target.value)} required />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formMessage">
-          <Form.Label>Message</Form.Label>
-          <Form.Control as="textarea" rows={5} placeholder="Enter your message" value={message} onChange={(e) => setMessage(e.target.value)} required />
-        </Form.Group>
-        <div style={{textAlign: "center"}}>
-            <Button variant="primary" type="submit">
-                Submit
-            </Button>
-        </div>
-      </Form>
-    </div> */}
     {showSuccessMessage && (
         <Alert variant="success" onClose={() => setShowSuccessMessage(false)} dismissible>
           Message sent successfully!
@@ -92,8 +66,8 @@ const ContactForm = () => {
       <div className="col-lg-5">
         <div className="single_address">
           <i className="fa fa-map-marker"></i>
-          <h4 style={{fontFamily:"aveneir next"}}>Our Address</h4>
-          <p style={{fontFamily:"aveneir next"}}>3800 SW 34th Street Gainesville, FL 32608</p>
+          <h4 style={{fontFamily:"aveneir next"}}>Address</h4>
+          <p style={{fontFamily:"aveneir next"}}>Gainesville, FL 32608</p>
         </div>
         <div className="single_address">
           <i className="fa fa-envelope"></i>
@@ -102,8 +76,8 @@ const ContactForm = () => {
         </div>
         <div className="single_address">
           <i className="fa fa-phone"></i>
-          <h4 style={{fontFamily:"aveneir next"}}>Call us on</h4>
-          <p style={{fontFamily:"aveneir next"}}>(+1) 352 740 9879</p>
+          <h4 style={{fontFamily:"aveneir next"}}>Call me on</h4>
+          <p style={{fontFamily:"aveneir next"}}>(+1) 352 554 8435</p>
         </div>
       </div>
       </Row>
