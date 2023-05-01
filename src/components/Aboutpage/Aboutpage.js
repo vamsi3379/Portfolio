@@ -64,7 +64,7 @@ function Aboutpage() {
                     </Col>
                     
                 </Row>
-                <Row style={{ justifyContent: "center" }}>
+                <Row style={{ justifyContent: "center", paddingTop:"60px" }}>
                     <h3 className='skillshead' style={{fontFamily:"aveneir next"}}>Languages</h3>
                 </Row>
                 <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
@@ -112,7 +112,7 @@ function Aboutpage() {
                   </Col>
                 </Row>
                 <Row style={{ justifyContent: "center" }}>
-                    <h3 className='skillshead' style={{fontFamily:"aveneir next"}}>Technologies</h3>
+                    <h3 className='skillshead' style={{fontFamily:"aveneir next", paddingTop:"60px"}}>Technologies</h3>
                 </Row>
                 <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
                   <Col xs={4} md={2} className="tech-icons">

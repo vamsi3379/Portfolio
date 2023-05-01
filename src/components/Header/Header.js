@@ -20,30 +20,46 @@ function Header() {
   const [currentSection, setCurrentSection] = useState("home");
 
   useEffect(() => {
+    const handleScroll = () => {
+      const home = document.getElementById("home");
+      const about = document.getElementById("about");
+      const experience = document.getElementById("experience");
+      const projects = document.getElementById("projects");
+      const contact = document.getElementById("contact");
+      console.log("home",home.getBoundingClientRect().top)
+      console.log("about",about.getBoundingClientRect().top)
+      console.log("experience",experience.getBoundingClientRect().top)
+      console.log("projects",projects.getBoundingClientRect().top)
+      console.log("contact",contact.getBoundingClientRect().top)
+      
+      if (contact && contact.getBoundingClientRect().top <= 0) {
+        setCurrentSection("contact");
+      }else if (projects && projects.getBoundingClientRect().top <= 0) {
+        setCurrentSection("projects");
+      }else if (experience && experience.getBoundingClientRect().top <= 0) {
+        setCurrentSection("experience");
+      } else if (about && about.getBoundingClientRect().top <= 0) {
+        setCurrentSection("about");
+      } else if (home && home.getBoundingClientRect().top <= 0) {
+        setCurrentSection("home");
+      } 
+      console.log(currentSection)
+    };
+  
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [currentSection]);
 
-  const handleScroll = () => {
-    const home = document.getElementById("home");
-    const about = document.getElementById("about");
-    const projects = document.getElementById("projects");
-    const contact = document.getElementById("contact");
 
-    if (home && home.getBoundingClientRect().top <= 0) {
-      setCurrentSection("home");
-    } else if (about && about.getBoundingClientRect().top <= 0) {
-      setCurrentSection("about");
-    } else if (projects && projects.getBoundingClientRect().top <= 0) {
-      setCurrentSection("projects");
-    } else if (contact && contact.getBoundingClientRect().top <= 0) {
-      setCurrentSection("contact");
-    }
 
-  };
+  
 
+  
+  const print = () => {
+    console.log(currentSection);
+  }
   const handleNavClick = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
     updateExpanded(false);
@@ -56,7 +72,6 @@ function Header() {
       updateNavbar(false);
     }
   }
-
   window.addEventListener("scroll", scrollHandler);
 
   return (
@@ -89,7 +104,7 @@ function Header() {
          <Nav.Item>
             <Nav.Link
               onClick={() => handleNavClick(homeRef)}
-              className='rounded' 
+              className={`rounded ${currentSection === "home" ? "selected-nav-item" : ""}`}
             >
               Home
             </Nav.Link>
@@ -97,7 +112,7 @@ function Header() {
           <Nav.Item>
             <Nav.Link
               onClick={() => handleNavClick(aboutRef)}
-              className='rounded' 
+              className={`rounded ${currentSection === "about" ? "selected-nav-item" : ""}`}
             >
                 About
             </Nav.Link>
@@ -105,7 +120,7 @@ function Header() {
           <Nav.Item>
             <Nav.Link
               onClick={() => handleNavClick(experienceRef)}
-              className='rounded' 
+              className={`rounded ${currentSection === "experience" ? "selected-nav-item" : ""}`}
             >
                 Experience
             </Nav.Link>
@@ -113,7 +128,7 @@ function Header() {
           <Nav.Item>
             <Nav.Link
               onClick={() => handleNavClick(projectRef)}
-              className='rounded' 
+              className={`rounded ${currentSection === "projects" ? "selected-nav-item" : ""}`}
             >
                 Projects
             </Nav.Link>
@@ -121,9 +136,9 @@ function Header() {
           <Nav.Item>
             <Nav.Link
               onClick={() => handleNavClick(contactRef)}
-              className='rounded' 
+              className={`rounded ${currentSection === "contact" ? "selected-nav-item" : ""}`}
             >
-                Conact
+                Contact
             </Nav.Link>
           </Nav.Item>
           <Button
@@ -135,20 +150,20 @@ function Header() {
         </Nav>
       </Navbar.Collapse>
     </Navbar>
-    <div ref={homeRef}>
+    <div id="home" ref={homeRef}>
       <Homepage/>
     </div>
 
-    <div ref={aboutRef}>
+    <div id="about" ref={aboutRef} onClick={print}>
       <Aboutpage/>
     </div>
-    <div ref={experienceRef}>
+    <div id="experience" ref={experienceRef} onClick={print} style={{paddingTop:"50px"}}>
       <Experience/>
     </div>
-    <div ref={projectRef}>
+    <div id="projects" ref={projectRef} onClick={print} style={{paddingTop:"50px"}}>
       <Projectlist/>
     </div>
-    <div ref={contactRef}>
+    <div id="contact" ref={contactRef} onClick={print} style={{paddingTop:"50px"}}>
       <Contact/>
     </div>
     </>
