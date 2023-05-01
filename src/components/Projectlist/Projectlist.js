@@ -13,6 +13,9 @@ function Projectlist() {
     <div className="projectbackground">
       <Container fluid className="project-section">
         <Container>
+        <Row style={{ justifyContent: "center" }}>
+            <h3 className='skillshead' style={{fontFamily:"aveneir next"}}>Projects</h3>
+        </Row>
           <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
             <Col xs={6} md={4} className="project-card">
               <ProjectCard

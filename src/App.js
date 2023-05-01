@@ -7,6 +7,7 @@ import About from './pages/About'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Project from './pages/Project';
 import Contact from './pages/Contact';
+import Header from './components/Header/Header'
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -23,10 +24,10 @@ function App() {
   return (
     <div className="App">
       <Router>
-        {/* <Preloader load={load} />  */}
+        
         <div className="App" id={load ? "no-scroll" : "scroll"}>
           <Routes>
-            <Route path='/' element={<Home />}></Route>
+            <Route path='/' element={<Header />}></Route>
             <Route path='/about' element={<About />}></Route>
             <Route path='/project' element={<Project />}></Route>
             <Route path='/contact' element={<Contact />}></Route>

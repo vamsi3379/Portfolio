@@ -57,7 +57,6 @@ function Home() {
             </div>
           </Col>
         </Row>
-        <Aboutpage/>
       </Container>
     </div>
   )

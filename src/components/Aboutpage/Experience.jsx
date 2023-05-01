@@ -6,15 +6,21 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import {MdOutlineWork} from "react-icons/md";
 import { motion } from "framer-motion";
+import { Container, Row } from 'react-bootstrap'
 
 const Experience = () => (
     <>
+    <Container>
+      <Row style={{ justifyContent: "center" }}>
+          <h3 className='skillshead' style={{fontFamily:"aveneir next"}}>Experience</h3>
+      </Row>
+      <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
         <VerticalTimeline>
-            <style>{`
-    .vertical-timeline::before {
-      background-color: black;
-    }
-  `}</style>
+              <style>{`
+      .vertical-timeline::before {
+        background-color: black;
+      }
+    `}</style>
           <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
@@ -71,6 +77,11 @@ const Experience = () => (
             </VerticalTimelineElement>
             </motion.div>
         </VerticalTimeline>
+      </Row>
+    </Container>
+    
+
+        
     </>
 );
 

@@ -1,30 +1,53 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { Button } from 'react-bootstrap';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { Link } from "react-router-dom";
 import '../../pages/style.css';
-import { motion } from "framer-motion";
+import Homepage from '../Homepage/Homepage'
+import Aboutpage from '../Aboutpage/Aboutpage';
+import Projectlist from '../Projectlist/Projectlist';
+import Contact from '../Contactpage/Contactpage';
+import Experience from '../Aboutpage/Experience';
 
 function Header() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
-  const [homeSelected, setHomeSelected] = useState(false);
-  // const [aboutSelected, setAboutSelected] = useState(false);
-  const [projectsSelected, setProjectsSelected] = useState(false);
-  const [contactSelected, setContactSelected] = useState(false);
+  const homeRef = useRef(null);
+  const aboutRef = useRef(null);
+  const experienceRef = useRef(null);
+  const projectRef = useRef(null);
+  const contactRef = useRef(null);
+  const [currentSection, setCurrentSection] = useState("home");
+
   useEffect(() => {
-    if (window.location.href === "https://vamsipachamatla.com/"){
-      setHomeSelected(true)
-    // }else if (window.location.href === "https://vamsipachamatla.com/about"){
-    //   setAboutSelected(true)
-    }else if (window.location.href === "https://vamsipachamatla.com/project"){
-      setProjectsSelected(true)
-    }else if (window.location.href === "https://vamsipachamatla.com/contact"){
-      setContactSelected(true)
-    }
-    
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
+
+  const handleScroll = () => {
+    const home = document.getElementById("home");
+    const about = document.getElementById("about");
+    const projects = document.getElementById("projects");
+    const contact = document.getElementById("contact");
+
+    if (home && home.getBoundingClientRect().top <= 0) {
+      setCurrentSection("home");
+    } else if (about && about.getBoundingClientRect().top <= 0) {
+      setCurrentSection("about");
+    } else if (projects && projects.getBoundingClientRect().top <= 0) {
+      setCurrentSection("projects");
+    } else if (contact && contact.getBoundingClientRect().top <= 0) {
+      setCurrentSection("contact");
+    }
+
+  };
+
+  const handleNavClick = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+    updateExpanded(false);
+  };
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -37,13 +60,15 @@ function Header() {
   window.addEventListener("scroll", scrollHandler);
 
   return (
+    <>
     <Navbar expanded={expand}
       fixed="top"
       expand="md"
-      className={navColour ? "sticky" : "navbar"}>
+      className={navColour ? "sticky" : `navbar ${currentSection}`}
+      >
 
 
-      <Navbar.Brand className='logotext' as={Link} to='/'>
+      <Navbar.Brand className='logotext'>
         {/* <Nav.Link as={Link} to="/" onClick={() => {updateExpanded(false);}}> Vamsi Pachamatla</Nav.Link> */}
         <div className='navbar-toggle'>
           <h5 style={{color:"#4158d0"}}>Vamsi</h5>
@@ -61,148 +86,46 @@ function Header() {
       <Navbar.Collapse id="responsive-navbar-nav" className='responsive-navbar'>
 
         <Nav className="ms-auto" defaultActiveKey="#home">
-          {homeSelected&&(
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/"
-                onClick={() => {updateExpanded(false);}}
-                className='selected-nav-item rounded' 
-              >
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.5 }}
-                  whileHover={{ scale: 1.4, color:'#4158d0' }} 
-                  whileTap={{ scale: 0.9 }}
-                >
-                  Home
-                </motion.div>
-              </Nav.Link>
-            </Nav.Item>
-          )}
-          {!homeSelected&&(
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/"
-                onClick={() => {updateExpanded(false);}}
-              >
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.5 }}
-                  whileHover={{ scale: 1.4, color:'#4158d0' }} 
-                  whileTap={{ scale: 0.9 }}
-                >
-                  Home
-                </motion.div>
-              </Nav.Link>
-            </Nav.Item>
-          )}
-
-          {/* {aboutSelected&&(
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={() => {updateExpanded(false);}}
-                className='selected-nav-item rounded' 
-              >
+         <Nav.Item>
+            <Nav.Link
+              onClick={() => handleNavClick(homeRef)}
+              className='rounded' 
+            >
+              Home
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link
+              onClick={() => handleNavClick(aboutRef)}
+              className='rounded' 
+            >
                 About
-              </Nav.Link>
-            </Nav.Item>
-          )}
-          {!aboutSelected&&(
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={() => {updateExpanded(false);}}
-              >
-                About
-              </Nav.Link>
-            </Nav.Item>
-          )} */}
-          {projectsSelected&&(
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/project"
-                onClick={() => {updateExpanded(false);}}
-                className='selected-nav-item rounded' 
-              >
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.5 }}
-                  whileHover={{ scale: 1.4, color:'#4158d0' }} 
-                  whileTap={{ scale: 0.9 }}
-                >
-                  Projects
-                </motion.div>
-              </Nav.Link>
-            </Nav.Item>
-          )}
-          {!projectsSelected&&(
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/project"
-                onClick={() => {updateExpanded(false);}}
-              >
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.5 }}
-                  whileHover={{ scale: 1.4, color:'#4158d0' }} 
-                  whileTap={{ scale: 0.9 }}
-                >
-                  Projects
-                </motion.div>
-              </Nav.Link>
-            </Nav.Item>
-          )}
-
-          {contactSelected&&(
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/contact"
-                onClick={() => {updateExpanded(false);}}
-                className='selected-nav-item rounded' 
-              >
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.5 }}
-                  whileHover={{ scale: 1.4, color:'#4158d0' }} 
-                  whileTap={{ scale: 0.9 }}
-                >
-                  Contact
-                </motion.div>
-              </Nav.Link>
-            </Nav.Item>
-          )}
-          {!contactSelected&&(
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/contact"
-                onClick={() => {updateExpanded(false);}}
-              >
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.5 }}
-                  whileHover={{ scale: 1.4, color:'#4158d0' }} 
-                  whileTap={{ scale: 0.9 }}
-                >
-                  Contact
-                </motion.div>
-              </Nav.Link>
-            </Nav.Item>
-          )}
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link
+              onClick={() => handleNavClick(experienceRef)}
+              className='rounded' 
+            >
+                Experience
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link
+              onClick={() => handleNavClick(projectRef)}
+              className='rounded' 
+            >
+                Projects
+            </Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link
+              onClick={() => handleNavClick(contactRef)}
+              className='rounded' 
+            >
+                Conact
+            </Nav.Link>
+          </Nav.Item>
           <Button
             onClick={() => {
               window.open("https://drive.google.com/file/d/1cWQ2i2s7s4LAi7Fz7RTsPpNGAEwIkUi_/view?usp=sharing");
@@ -211,8 +134,24 @@ function Header() {
           </Button>
         </Nav>
       </Navbar.Collapse>
-
     </Navbar>
+    <div ref={homeRef}>
+      <Homepage/>
+    </div>
+
+    <div ref={aboutRef}>
+      <Aboutpage/>
+    </div>
+    <div ref={experienceRef}>
+      <Experience/>
+    </div>
+    <div ref={projectRef}>
+      <Projectlist/>
+    </div>
+    <div ref={contactRef}>
+      <Contact/>
+    </div>
+    </>
   );
 }
 

@@ -31,7 +31,6 @@ import {
 import {
   BsFiletypeCss
 } from "react-icons/bs";
-import Experience from './Experience'; 
 import { motion } from "framer-motion";
 
 
@@ -182,12 +181,6 @@ function Aboutpage() {
                       <h5 style={{color:'black'}}>Git</h5>
                     </motion.div>
                   </Col>
-                </Row>
-                <Row style={{ justifyContent: "center" }}>
-                    <h3 className='skillshead' style={{fontFamily:"aveneir next"}}>Experience</h3>
-                </Row>
-                <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-                    <Experience/>
                 </Row>
             </Container>
         </div>
