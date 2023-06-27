@@ -56,7 +56,7 @@ function Projectlist() {
                 imgPath={Bitcoin}
                 isBlog={false}
                 title="Bitcoin Mining"
-                description="Bitcoins are a type of cryptocurrency that use cryptographic hashing to limit their supply. The key component of a bitcoin is an input that, when hashed using SHA-256, produces an output smaller than a target value with a certain number of leading zeros. The goal of the project is to use Erlang and the Actor Model to build a solution that efficiently solves this problem on multi-core machines.."
+                description="Bitcoins are a type of cryptocurrency that use cryptographic hashing to limit their supply. The key component of a bitcoin is an input that, when hashed using SHA-256, produces an output smaller than a target value with a certain number of leading zeros. The goal of the project is to use Erlang and the Actor Model to build a solution that efficiently solves this problem on multi-core machines."
                 ghLink="https://github.com/vamsi3379/DOSP_Project1_Bitcoin_Mining"
               />
             </Col>

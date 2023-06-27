@@ -40,7 +40,7 @@ const ContactForm = () => {
   <div className="container">
     <div className="section-title text-center">
       <h1 style={{fontFamily:"aveneir next"}}>Get in Touch</h1>
-      <p style={{fontFamily:"aveneir next"}}>I'm always open to hearing about exciting new opportunities in the software engineering field. If you're interested in working with a driven and knowledgeable developer, don't hesitate to get in touch.</p>
+      <p style={{fontFamily:"aveneir next !important"}}>I'm always open to hearing about exciting new opportunities in the software engineering field. If you're interested in working with a driven and knowledgeable developer, don't hesitate to get in touch.</p>
     </div>
     <Row>
       <div className="col-lg-7">
