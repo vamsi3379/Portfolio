@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-
+import { AiFillGithub } from "react-icons/ai";
 
 
 function ProjectCard(props) {
@@ -13,23 +13,40 @@ function ProjectCard(props) {
         <Card.Text style={{ fontFamily:"avenir next" }}>
           {props.description}
         </Card.Text>
-        <Button className="viewbtn" variant="primary" href={props.ghLink} target="_blank">
-          View
+        
+        {/* {"\n"}
+        {"\n"} */}
+
+
+{props.isBlog && (
+      <div className="button-container">
+        <Button
+          variant="primary"
+          href={props.demoLink}
+          target="_blank"
+          className="demobtn"
+        >
+          {"Demo"}
         </Button>
-        {"\n"}
-        {"\n"}
+        <Button
+          variant="primary"
+          href={props.ghLink}
+          target="_blank"
+          className="demobtn"
+        >
+          {"GitHub"}
+          <AiFillGithub></AiFillGithub>
+        </Button>
+      </div>
+    )}
 
 
-        {!props.isBlog && props.demoLink && (
-          <Button
-            variant="primary"
-            href={props.demoLink}
-            target="_blank"
-            style={{ marginLeft: "10px" }}
-          >
 
-            {"Demo"}
-          </Button>
+        {!props.isBlog && (
+          <Button className="viewbtn" variant="primary" href={props.ghLink} target="_blank">
+          {"GitHub"}
+          <AiFillGithub></AiFillGithub>
+        </Button>
         )}
       </Card.Body>
     </Card>

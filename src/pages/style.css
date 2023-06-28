@@ -407,6 +407,42 @@
   width:90%;
 }
 
+.demobtn {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  letter-spacing: 1px;
+  width: 45%; /* Adjust this value to set the width of the buttons */
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 10px; /* adjust this value to set the distance of the buttons from the bottom */
+  left: 0;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
+}
+
+/* .demobtn {
+  margin-top: 10px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  position: absolute;
+  top: 0;
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+
+
 /* .btn-primary {
   color: #fff !important;
   background-color: transparent !important;

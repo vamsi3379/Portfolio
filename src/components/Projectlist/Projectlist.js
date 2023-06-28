@@ -8,6 +8,9 @@ import HandwrittenSymbols from '../../Assets/Hand-Written-Mathematical-Symbols-C
 import Bitcoin from '../../Assets/Bitcoin.svg'
 import Twitter from '../../Assets/Twitter.png'
 import Gym from '../../Assets/Gym.avif'
+import BookWise from '../../Assets/BookWise.png'
+
+
 function Projectlist() {
   return (
     <div className="projectbackground">
@@ -17,7 +20,7 @@ function Projectlist() {
             <h3 className='skillshead' style={{fontFamily:"aveneir next"}}>Projects</h3>
         </Row>
           <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-            <Col xs={12} md={4} className="project-card">
+            <Col xs={12} md={6} lg={4} className="project-card">
               <ProjectCard
                 imgPath={UPSCPre}
                 isBlog={false}
@@ -29,7 +32,7 @@ function Projectlist() {
               />
             </Col>
 
-            <Col xs={12} md={4} className="project-card">
+            <Col xs={12} md={6} lg={4} className="project-card">
               <ProjectCard
                 imgPath={PeekNshop}
                 isBlog={false}
@@ -41,7 +44,20 @@ function Projectlist() {
               />
             </Col>
 
-            <Col xs={12} md={4} className="project-card">
+            <Col xs={12} md={6} lg={4} className="project-card">
+              <ProjectCard
+                imgPath={BookWise}
+                isBlog={true}
+                title="Book Wise"
+                description="Built an android learning platform application for students to prepare for the most competitive exams conducted by
+                UPSC (Union Public Service Commission) of India while closely collaborating with 3 others. Ranked among top ten UPSC-related applications, the app is available on Playstore with a productivity boost of 20%
+                and user engagement boost of 40% in the past year."
+                ghLink="https://github.com/vamsi3379/Book_Wise"
+                demoLink="https://ec2-18-189-18-248.us-east-2.compute.amazonaws.com/home"
+              />
+            </Col>
+
+            <Col xs={12} md={6} lg={4} className="project-card">
               <ProjectCard
                 imgPath={HandwrittenSymbols}
                 isBlog={false}
@@ -51,7 +67,7 @@ function Projectlist() {
               />
             </Col>
 
-            <Col xs={12} md={4} className="project-card">
+            <Col xs={12} md={6} lg={4} className="project-card">
               <ProjectCard
                 imgPath={Bitcoin}
                 isBlog={false}
@@ -61,7 +77,7 @@ function Projectlist() {
               />
             </Col>
 
-            <Col xs={12} md={4} className="project-card">
+            <Col xs={12} md={6} lg={4} className="project-card">
               <ProjectCard
                 imgPath={Twitter}
                 isBlog={false}
@@ -71,14 +87,13 @@ function Projectlist() {
               />
             </Col>
 
-            <Col xs={12} md={4} className="project-card">
+            <Col xs={12} md={6} lg={4} className="project-card">
               <ProjectCard
                 imgPath={Gym}
                 isBlog={false}
                 title="Gym Posture Correction"
                 description="Gym Posture Corrector helps improve workout performance and posture without a personal trainer. It analyzes body posture and limb movements, comparing them with expert exercises to provide real-time feedback using advanced motion detection. Improve your body's health with our care."
                 ghLink="https://github.com/vamsi3379/GymPostureCorrection"
-
               />
             </Col>
           </Row>

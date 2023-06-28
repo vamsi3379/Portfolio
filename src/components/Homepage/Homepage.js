@@ -35,7 +35,7 @@ function Home() {
             }}
               className='socailmediabtn'><AiFillGithub className='icon' /></button>
             <button onClick={() => {
-              window.open("https://www.linkedin.com/in/vamsi-pachamatla-0b268b196/");
+              window.open("https://www.linkedin.com/in/vamsipachamatla/");
             }}
               className='socailmediabtn'><FaLinkedinIn className='icon' /></button>
             <button onClick={() => {
