@@ -18,17 +18,31 @@ import {
   SiDjango,
   SiPostman,
   SiPostgresql,
+  SiKubernetes,
+  SiSpringboot,
+  SiTensorflow,
+  SiDotnet,
 } from "react-icons/si";
 import {
   TbBrandTypescript,
   TbBrandGolang,
+  TbBrandNextjs,
 } from "react-icons/tb";
 import {
-  AiFillHtml5
+  AiFillHtml5,
 } from "react-icons/ai";
 import {
-  BsFiletypeCss
+  BsFiletypeCss,
 } from "react-icons/bs";
+import {
+  FaFigma,
+  FaCcStripe,
+} from "react-icons/fa";
+
+
+
+
+
 import { motion } from "framer-motion";
 
 
@@ -152,6 +166,49 @@ function Skills() {
                       <h5 style={{color:'black'}}>Git</h5>
                     </motion.div>
                   </Col>
+                  <Col xs={4} md={2} className="tech-icons">
+                    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                      <SiKubernetes />
+                      <h5 style={{color:'black'}}>Kubernetes</h5>
+                    </motion.div>
+                  </Col>
+                  <Col xs={4} md={2} className="tech-icons">
+                    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                      <FaFigma />
+                      <h5 style={{color:'black'}}>Figma</h5>
+                    </motion.div>
+                  </Col>
+                  <Col xs={4} md={2} className="tech-icons">
+                    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                      <TbBrandNextjs />
+                      <h5 style={{color:'black'}}>Next.js</h5>
+                    </motion.div>
+                  </Col>
+                  <Col xs={4} md={2} className="tech-icons">
+                    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                      <FaCcStripe />
+                      <h5 style={{color:'black'}}>Stripe</h5>
+                    </motion.div>
+                  </Col>
+                  <Col xs={4} md={2} className="tech-icons">
+                    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                      <SiSpringboot />
+                      <h5 style={{color:'black'}}>Spring Boot</h5>
+                    </motion.div>
+                  </Col>
+                  <Col xs={4} md={2} className="tech-icons">
+                    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                      <SiTensorflow />
+                      <h5 style={{color:'black'}}>Tensor Flow</h5>
+                    </motion.div>
+                  </Col>
+                  <Col xs={4} md={2} className="tech-icons">
+                    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                      <SiDotnet />
+                      <h5 style={{color:'black'}}>.Net</h5>
+                    </motion.div>
+                  </Col>
+                  
                 </Row>
             </Container>
     )

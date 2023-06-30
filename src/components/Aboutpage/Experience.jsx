@@ -5,7 +5,6 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import {MdOutlineWork} from "react-icons/md";
-import { motion } from "framer-motion";
 import { Container, Row } from 'react-bootstrap'
 
 const Experience = () => (
@@ -21,7 +20,6 @@ const Experience = () => (
         background-color: black;
       }
     `}</style>
-          <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
                 contentStyle={{ background: '#4158d0', color: '#fff' }}
@@ -76,7 +74,6 @@ const Experience = () => (
                   <li style={{fontFamily:"aveneir next"}}>Collaborated with a team of 9 interns and 2 senior developers for successful application deployment, enabling easier time off or vacation requests directly through Teams, streamlining HR processes and reducing response times for leave requests.</li>
                 </ul>
             </VerticalTimelineElement>
-            </motion.div>
         </VerticalTimeline>
       </Row>
     </Container>

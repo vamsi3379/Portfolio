@@ -2,6 +2,7 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { AiFillGithub } from "react-icons/ai";
+import { MdHttp } from "react-icons/md";
 
 
 function ProjectCard(props) {
@@ -27,6 +28,7 @@ function ProjectCard(props) {
           className="demobtn"
         >
           {"Demo"}
+          <MdHttp></MdHttp>
         </Button>
         <Button
           variant="primary"
