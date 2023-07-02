@@ -3,6 +3,9 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { AiFillGithub } from "react-icons/ai";
 import { MdHttp } from "react-icons/md";
+import Chip from '@mui/material/Chip';
+import { FaRegNewspaper } from "react-icons/fa";
+
 
 
 function ProjectCard(props) {
@@ -14,12 +17,16 @@ function ProjectCard(props) {
         <Card.Text style={{ fontFamily:"avenir next" }}>
           {props.description}
         </Card.Text>
+        {props.tags.map((tag, index) => (
+      <Chip label={tag} />
+        ))}
+      
         
         {/* {"\n"}
         {"\n"} */}
 
 
-{props.isBlog && (
+{props.isBlog && !props.paper &&(
       <div className="button-container">
         <Button
           variant="primary"
@@ -41,13 +48,30 @@ function ProjectCard(props) {
         </Button>
       </div>
     )}
+    {props.isBlog && props.paper &&(
+        <Button
+          variant="primary"
+          href={props.demoLink}
+          target="_blank"
+          className="viewbtn"
+        >
+          {"Demo"}
+          <MdHttp></MdHttp>
+        </Button>
+    )}
 
 
 
-        {!props.isBlog && (
+        {!props.isBlog && !props.paper && (
           <Button className="viewbtn" variant="primary" href={props.ghLink} target="_blank">
           {"GitHub"}
           <AiFillGithub></AiFillGithub>
+        </Button>
+        )}
+        {!props.isBlog && props.paper && (
+          <Button className="viewbtn" variant="primary" href={props.paperLink} target="_blank">
+          {"Publication"}
+          <FaRegNewspaper></FaRegNewspaper>
         </Button>
         )}
       </Card.Body>

@@ -30,7 +30,7 @@ const Experience = () => (
                 iconStyle={{ background: 'black', color: '#4158d0' }}
                 icon={<MdOutlineWork />}
                 >
-                <h3 className="vertical-timeline-element-title" style={{color:"black", fontFamily:"aveneir next"}}>Graduate Student Assistant</h3>
+                <h3 className="vertical-timeline-element-title" style={{color:"black", fontFamily:"aveneir next"}}>Graduate Research Assistant</h3>
                 <h5 className="vertical-timeline-element-subtitle" style={{color:"black", fontFamily:"aveneir next"}}>University of Florida</h5>
                 <ul>
                   <li style={{fontFamily:"aveneir next"}}> Executed a seamless migration of a legacy Shark bite victims database from the 2000s to AWS server, while incorporating an admin dashboard for user submissions.</li>

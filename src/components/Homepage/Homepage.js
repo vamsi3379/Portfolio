@@ -7,6 +7,9 @@ import {
   // AiOutlineTwitter,
   AiFillInstagram,
 } from "react-icons/ai";
+import {
+  SiLeetcode,
+} from "react-icons/si";
 import { FaLinkedinIn } from "react-icons/fa";
 import Lottie from 'react-lottie';
 import HomeImage from '../../Assets/RJPmpgB4oS.json';
@@ -42,6 +45,10 @@ function Home() {
               window.open("https://instagram.com/vamsi_pachamatla?igshid=YmMyMTA2M2Y=");
             }}
               className='socailmediabtn'><AiFillInstagram className='icon' /></button>
+            <button onClick={() => {
+              window.open("https://leetcode.com/VamsiPachamatla/");
+            }}
+              className='socailmediabtn'><SiLeetcode className='icon' /></button>
           </Col>
 
           <Col md={5}>

@@ -18,10 +18,10 @@ import {
   SiDjango,
   SiPostman,
   SiPostgresql,
-  SiKubernetes,
   SiSpringboot,
   SiTensorflow,
   SiDotnet,
+  SiD3Dotjs,
 } from "react-icons/si";
 import {
   TbBrandTypescript,
@@ -37,6 +37,7 @@ import {
 import {
   FaFigma,
   FaCcStripe,
+  FaDocker,
 } from "react-icons/fa";
 
 
@@ -168,8 +169,8 @@ function Skills() {
                   </Col>
                   <Col xs={4} md={2} className="tech-icons">
                     <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-                      <SiKubernetes />
-                      <h5 style={{color:'black'}}>Kubernetes</h5>
+                      <FaDocker />
+                      <h5 style={{color:'black'}}>Docker</h5>
                     </motion.div>
                   </Col>
                   <Col xs={4} md={2} className="tech-icons">
@@ -206,6 +207,12 @@ function Skills() {
                     <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
                       <SiDotnet />
                       <h5 style={{color:'black'}}>.Net</h5>
+                    </motion.div>
+                  </Col>
+                  <Col xs={4} md={2} className="tech-icons">
+                    <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+                      <SiD3Dotjs />
+                      <h5 style={{color:'black'}}>D3</h5>
                     </motion.div>
                   </Col>
                   
