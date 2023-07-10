@@ -10,6 +10,7 @@ import Twitter from '../../Assets/Twitter.png'
 import BookWise from '../../Assets/BookWise.png'
 import RiceDisease from '../../Assets/RiceDisease.jpg'
 import BlockChain from '../../Assets/BlockChain.png'
+import EShop from '../../Assets/EShop.png'
 
 function Projectlist() {
   return (
@@ -50,13 +51,24 @@ function Projectlist() {
 
             <Col xs={12} md={6} lg={4} className="project-card">
               <ProjectCard
+                imgPath={EShop}
+                isBlog={true}
+                paper={false}
+                title="EShop"
+                description="Developed a simple e-commerce web application that displays a wide range of products. The admin has been empowered with the ability to add diverse categories and products to the platform. For user login and registration, I implemented JWT authentication."
+                ghLink="https://github.com/vamsi3379/"
+                demoLink="https://eshopclient.azurewebsites.net/"
+                tags={[".Net", "Blazor", "C#", "Azure", "MSSQL", "Stripe", "Bootstrap", "Swagger"]}
+              />
+            </Col>
+
+            <Col xs={12} md={6} lg={4} className="project-card">
+              <ProjectCard
                 imgPath={BookWise}
                 isBlog={true}
                 paper={false}
                 title="Book Wise"
-                description="Built an android learning platform application for students to prepare for the most competitive exams conducted by
-                UPSC (Union Public Service Commission) of India while closely collaborating with 3 others. Ranked among top ten UPSC-related applications, the app is available on Playstore with a productivity boost of 20%
-                and user engagement boost of 40% in the past year."
+                description="I designed and developed a Library Management System (LMS) that allows users to reserve books for a specified period by making a payment. Additionally, users can seamlessly write reviews for the books they purchase. As an administrator, I incorporated the ability to add various types of books and respond to inquiries from different users."
                 ghLink="https://github.com/vamsi3379/Book_Wise"
                 demoLink="https://ec2-18-189-18-248.us-east-2.compute.amazonaws.com/home"
                 tags={["SpringBoot", "React", "MySQL", "Java", "TypeScript", "Okta", "Docker", "Microservices", "Kafka", "Stripe"]}

@@ -25,7 +25,7 @@ const Experience = () => (
                 contentStyle={{ background: '#4158d0', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  #4158d0' }}
                 date={<span style={{ color: "black" }}>
-                    2023 - Present
+                    Jun 2023 - Present
                 </span>}
                 iconStyle={{ background: 'black', color: '#4158d0' }}
                 icon={<MdOutlineWork />}
@@ -44,7 +44,7 @@ const Experience = () => (
                 contentStyle={{ background: '#4158d0', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  #4158d0' }}
                 date={<span style={{ color: "black" }}>
-                    2023 - 2023
+                    Jan 2023 - May 2023
                 </span>}
                 iconStyle={{ background: 'black', color: '#4158d0' }}
                 icon={<MdOutlineWork />}
@@ -62,7 +62,7 @@ const Experience = () => (
                 contentStyle={{ background: '#4158d0', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  #4158d0' }}
                 date={<span style={{ color: "black" }}>
-                    2021 - 2021
+                    Aug 2021 - Oct 2021
                 </span>}
                 iconStyle={{ background: 'black', color: '#4158d0' }}
                 icon={<MdOutlineWork />}
@@ -70,8 +70,9 @@ const Experience = () => (
                 <h3 className="vertical-timeline-element-title" style={{color:"black", fontFamily:"aveneir next"}}>Associate Nodejs Developer</h3>
                 <h5 className="vertical-timeline-element-subtitle"style={{color:"black", fontFamily:"aveneir next"}}>Celebal Technologies</h5>
                 <ul>
-                  <li style={{fontFamily:"aveneir next"}}>Developed a Microsoft Teams Bot application utilizing Node.js, Microsoft Bot Framework Composer, and Azure cloud technologies, trimming the HR processing manual load by 30%.</li>
-                  <li style={{fontFamily:"aveneir next"}}>Collaborated with a team of 9 interns and 2 senior developers for successful application deployment, enabling easier time off or vacation requests directly through Teams, streamlining HR processes and reducing response times for leave requests.</li>
+                  <li style={{fontFamily:"aveneir next"}}>Developed and maintained a Microsoft Teams Bot application using Node.js and the Microsoft Bot Framework, streamlining HR processes and reducing manual workload by 30%, while ensuring smooth functionality and optimal performance.</li>
+                  <li style={{fontFamily:"aveneir next"}}>Collaborated with cross-functional teams, including designers and product managers, to gather requirements and implement new features and enhancements in the chatbot.
+</li>
                 </ul>
             </VerticalTimelineElement>
         </VerticalTimeline>
