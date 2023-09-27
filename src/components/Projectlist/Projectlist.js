@@ -56,7 +56,7 @@ function Projectlist() {
                 paper={false}
                 title="EShop"
                 description="Developed a simple e-commerce web application that displays a wide range of products. The admin has been empowered with the ability to add diverse categories and products to the platform. For user login and registration, I implemented JWT authentication."
-                ghLink="https://github.com/vamsi3379/"
+                ghLink="https://github.com/vamsi3379/EShop"
                 demoLink="https://eshopclient.azurewebsites.net/"
                 tags={[".Net", "Blazor", "C#", "Azure", "MSSQL", "Stripe", "Bootstrap", "Swagger"]}
               />
