@@ -160,7 +160,7 @@ function Header() {
           </Nav.Item>
           <Button
             onClick={() => {
-              window.open("https://drive.google.com/file/d/1bg4v9daiAlJagfLSGP3Ue6bwQxKeprOd/view?usp=sharing");
+              window.open("https://drive.google.com/file/d/1dOJTw5ibH1cD1hdO4-WPJLaSRK6hQ1f0/view?usp=share_link");
             }}
             className='resumebtn'><span>Resume</span>
           </Button>
