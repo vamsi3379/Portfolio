@@ -50,11 +50,28 @@ const Experience = () => (
                 icon={<MdOutlineWork />}
             >
                 <h3 className="vertical-timeline-element-title" style={{color:"black", fontFamily:"aveneir next"}}>Graduate Student Assistant</h3>
-                <h5 className="vertical-timeline-element-subtitle" style={{color:"black", fontFamily:"aveneir next"}}>Malt Group</h5>
+                <h5 className="vertical-timeline-element-subtitle" style={{color:"black", fontFamily:"aveneir next"}}>University of Florida (Malt Group)</h5>
                 <ul>
                   <li style={{fontFamily:"aveneir next"}}>Streamlined the sensor data for 100+ traffic intersections in large scale cities like Orlando for efficient real-time traffic monitoring.</li>
                   <li style={{fontFamily:"aveneir next"}}>Harnessed technologies like Node.js, React, Express.js, PostgreSQL, AWS Cloud and Auth0 to design and develop a fully functional web application.</li>
                   <li style={{fontFamily:"aveneir next"}}>Employed a high-availability deployment strategy using Kubernetes and Docker services on AWS, ensuring 0 downtime and seamless updates across multiple cluster nodes.</li>
+                </ul>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                contentStyle={{ background: '#4158d0', color: '#fff' }}
+                contentArrowStyle={{ borderRight: '7px solid  #4158d0' }}
+                date={<span style={{ color: "black" }}>
+                    Jan 2022 - Dec 2022
+                </span>}
+                iconStyle={{ background: 'black', color: '#4158d0' }}
+                icon={<MdOutlineWork />}
+            >
+                <h3 className="vertical-timeline-element-title" style={{color:"black", fontFamily:"aveneir next"}}>Backend Developert</h3>
+                <h5 className="vertical-timeline-element-subtitle" style={{color:"black", fontFamily:"aveneir next"}}>UPSC Pre</h5>
+                <ul>
+                  <li style={{fontFamily:"aveneir next"}}>Created an android learning platform application for students to prepare for the most competitive exams conducted by UPSC (Union Public Service Commission) of India while closely collaborating with 3 others.</li>
+                  <li style={{fontFamily:"aveneir next"}}>Achieved top ten ranking among UPSC-related applications on the Play Store. Currently, overseeing the expansion of the existing android app by introducing a web application component.</li>
                 </ul>
             </VerticalTimelineElement>
             <VerticalTimelineElement
