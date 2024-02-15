@@ -33,8 +33,8 @@ const Experience = () => (
                 <h3 className="vertical-timeline-element-title" style={{color:"black", fontFamily:"aveneir next"}}>Graduate Research Assistant</h3>
                 <h5 className="vertical-timeline-element-subtitle" style={{color:"black", fontFamily:"aveneir next"}}>University of Florida</h5>
                 <ul>
-                  <li style={{fontFamily:"aveneir next"}}> Executed a seamless migration of a legacy Shark bite victims database from the 2000s to AWS server, while incorporating an admin dashboard for user submissions.</li>
-                  <li style={{fontFamily:"aveneir next"}}> Enhanced optimization of storage capabilities and database performance by thorough column analysis and refinement.</li>
+                  <li style={{fontFamily:"aveneir next"}}> Led the migration of a legacy Shark bite victim's database to a .NET-based framework on AWS, achieving a 33% performance increase through column analysis and optimization. Developed a robust .NET admin dashboard to streamline database management tasks.</li>
+                  <li style={{fontFamily:"aveneir next"}}> Efficiently resolved numerous deployment complexities by integrating Nginx and significantly enhanced the performance of .NET APIs through meticulous debugging and systematic code refinement processes.</li>
                   <li style={{fontFamily:"aveneir next"}}>Leveraged the extensive functionalities of the D3.js framework to create comprehensive data visualizations based on shark attacks and geolocations.</li>
                 </ul>
             </VerticalTimelineElement>
@@ -52,9 +52,10 @@ const Experience = () => (
                 <h3 className="vertical-timeline-element-title" style={{color:"black", fontFamily:"aveneir next"}}>Graduate Student Assistant</h3>
                 <h5 className="vertical-timeline-element-subtitle" style={{color:"black", fontFamily:"aveneir next"}}>University of Florida (Malt Group)</h5>
                 <ul>
-                  <li style={{fontFamily:"aveneir next"}}>Streamlined the sensor data for 100+ traffic intersections in large scale cities like Orlando for efficient real-time traffic monitoring.</li>
-                  <li style={{fontFamily:"aveneir next"}}>Harnessed technologies like Node.js, React, Express.js, PostgreSQL, AWS Cloud and Auth0 to design and develop a fully functional web application.</li>
-                  <li style={{fontFamily:"aveneir next"}}>Employed a high-availability deployment strategy using Kubernetes and Docker services on AWS, ensuring 0 downtime and seamless updates across multiple cluster nodes.</li>
+                  <li style={{fontFamily:"aveneir next"}}>Crafted a dynamic .NET web dashboard interfacing with Kafka data streams and AWS S3 storage solutions, ensuring real-time data accessibility and management.</li>
+                  <li style={{fontFamily:"aveneir next"}}>Engineered a .NET and React based real-time traffic monitoring platform, processing and analyzing sensor data across over 100 intersections in major urban hubs like Orlando, featuring Auth0 security integration and live data visualization.</li>
+                  <li style={{fontFamily:"aveneir next"}}>Developed and maintained a robust CI/CD pipeline utilizing Jenkins and Docker within the .NET framework, achieving a 90% reduction in deployment downtime and enhancing operational efficiency.</li>
+                   <li style={{fontFamily:"aveneir next"}}>Guaranteed continuous service availability and eliminated downtime by implementing a strategic .NET deployment strategy with Nginx and Docker on AWS, enabling fluid updates across a distributed network infrastructure.</li>
                 </ul>
             </VerticalTimelineElement>
             <VerticalTimelineElement
