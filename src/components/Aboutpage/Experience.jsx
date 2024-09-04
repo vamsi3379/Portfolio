@@ -25,7 +25,27 @@ const Experience = () => (
                 contentStyle={{ background: '#4158d0', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  #4158d0' }}
                 date={<span style={{ color: "black" }}>
-                    Jun 2023 - Present
+                    Jul 2024 - Present
+                </span>}
+                iconStyle={{ background: 'black', color: '#4158d0' }}
+                icon={<MdOutlineWork />}
+            >
+                <h3 className="vertical-timeline-element-title" style={{color:"black", fontFamily:"aveneir next"}}>Full Stack Developer</h3>
+                <h5 className="vertical-timeline-element-subtitle" style={{color:"black", fontFamily:"aveneir next"}}>Dominion National Insurance</h5>
+                <ul>
+                  <li style={{fontFamily:"aveneir next"}}>Migrating the Data Dental internal application from .NET MVC architecture to .NET Core, enabling seamless integration with React, which improved the overall performance and scalability of the application. </li>
+                  <li style={{fontFamily:"aveneir next"}}>Resolved critical bugs in both the Provider and Member portals of the insurance platform using .NET Core, enhancing user experience and system reliability.</li>
+                  <li style={{fontFamily:"aveneir next"}}>Utilized Azure DevOps for continuous integration and deployment, streamlining the development process and reducing time-to-market.</li>
+                  <li style={{fontFamily:"aveneir next"}}>Optimized database interactions using MS SQL and Redis Cache, leading to faster data retrieval and improved application performance.</li>
+                  <li style={{fontFamily:"aveneir next"}}>Followed Agile methodology to manage tasks and sprints, collaborating effectively with cross-functional teams to deliver high-quality features and improvements.</li>
+                </ul>
+            </VerticalTimelineElement>
+            <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                contentStyle={{ background: '#4158d0', color: '#fff' }}
+                contentArrowStyle={{ borderRight: '7px solid  #4158d0' }}
+                date={<span style={{ color: "black" }}>
+                    Jun 2023 - Jun 2024
                 </span>}
                 iconStyle={{ background: 'black', color: '#4158d0' }}
                 icon={<MdOutlineWork />}
@@ -33,9 +53,11 @@ const Experience = () => (
                 <h3 className="vertical-timeline-element-title" style={{color:"black", fontFamily:"aveneir next"}}>Graduate Research Assistant</h3>
                 <h5 className="vertical-timeline-element-subtitle" style={{color:"black", fontFamily:"aveneir next"}}>University of Florida</h5>
                 <ul>
-                  <li style={{fontFamily:"aveneir next"}}> Led the migration of a legacy Shark bite victim's database to a .NET-based framework on AWS, achieving a 33% performance increase through column analysis and optimization. Developed a robust .NET admin dashboard to streamline database management tasks.</li>
-                  <li style={{fontFamily:"aveneir next"}}> Efficiently resolved numerous deployment complexities by integrating Nginx and significantly enhanced the performance of .NET APIs through meticulous debugging and systematic code refinement processes.</li>
-                  <li style={{fontFamily:"aveneir next"}}>Leveraged the extensive functionalities of the D3.js framework to create comprehensive data visualizations based on shark attacks and geolocations.</li>
+                <li style={{fontFamily:"aveneir next"}}>Developed and deployed a high-availability administrative dashboard using Java, Spring Boot and Hibernate, ensuring robust backend solutions that support business needs and improve operational efficiency.</li>
+                <li style={{fontFamily:"aveneir next"}}>Enhanced front-end user interface with React.js, aligning with contemporary JavaScript frameworks and improving client-side experiences to create end-user-centric solutions.</li>
+                <li style={{fontFamily:"aveneir next"}}>Implemented Continuous Integration and Continuous Deployment (CI/CD) pipelines using Jenkins; optimized Docker containerization strategies, achieving a 90% reduction in deployment-related downtimes.</li>
+                <li style={{fontFamily:"aveneir next"}}>Leveraged the extensive functionalities of the D3.js framework to create comprehensive data visualizations based on shark attacks and geolocations, enhancing data insights and decision-making.</li>
+                <li style={{fontFamily:"aveneir next"}}>Engaged in DevOps practices, agile development, and scrum ceremonies, fostering a collaborative and efficient development environment.</li>
                 </ul>
             </VerticalTimelineElement>
 
@@ -52,10 +74,10 @@ const Experience = () => (
                 <h3 className="vertical-timeline-element-title" style={{color:"black", fontFamily:"aveneir next"}}>Graduate Student Assistant</h3>
                 <h5 className="vertical-timeline-element-subtitle" style={{color:"black", fontFamily:"aveneir next"}}>University of Florida (Malt Group)</h5>
                 <ul>
-                  <li style={{fontFamily:"aveneir next"}}>Crafted a dynamic .NET web dashboard interfacing with Kafka data streams and AWS S3 storage solutions, ensuring real-time data accessibility and management.</li>
-                  <li style={{fontFamily:"aveneir next"}}>Engineered a .NET and React based real-time traffic monitoring platform, processing and analyzing sensor data across over 100 intersections in major urban hubs like Orlando, featuring Auth0 security integration and live data visualization.</li>
-                  <li style={{fontFamily:"aveneir next"}}>Developed and maintained a robust CI/CD pipeline utilizing Jenkins and Docker within the .NET framework, achieving a 90% reduction in deployment downtime and enhancing operational efficiency.</li>
-                   <li style={{fontFamily:"aveneir next"}}>Guaranteed continuous service availability and eliminated downtime by implementing a strategic .NET deployment strategy with Nginx and Docker on AWS, enabling fluid updates across a distributed network infrastructure.</li>
+                  <li style={{fontFamily:"aveneir next"}}>Engineered a sophisticated web dashboard backend using Java and Spring MVC, integrating seamlessly with Kafka for real-time data streams and AWS S3 for scalable data storage.</li>
+                  <li style={{fontFamily:"aveneir next"}}>Crafted a responsive admin interface using HTML5, CSS3, React, and Material-UI, enhancing administrative functionalities and user interactions.</li>
+                  <li style={{fontFamily:"aveneir next"}}>Developed a real-time traffic monitoring system with Java, demonstrating the capability to handle complex data management tasks over distributed networks.</li>
+                  <li style={{fontFamily:"aveneir next"}}>Utilized Docker and Kubernetes to maintain system efficiency and reliability across various operational scenarios.</li>
                 </ul>
             </VerticalTimelineElement>
             <VerticalTimelineElement
