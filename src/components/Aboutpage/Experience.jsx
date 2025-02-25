@@ -20,12 +20,49 @@ const Experience = () => (
         background-color: black;
       }
     `}</style>
+    <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                contentStyle={{ background: '#4158d0', color: '#fff' }}
+                contentArrowStyle={{ borderRight: '7px solid  #4158d0' }}
+                date={<span style={{ color: "black" }}>
+                    Jan 2025 - Present
+                </span>}
+                iconStyle={{ background: 'black', color: '#4158d0' }}
+                icon={<MdOutlineWork />}
+            >
+                <h3 className="vertical-timeline-element-title" style={{color:"black", fontFamily:"aveneir next"}}>Software Engineer</h3>
+                <h5 className="vertical-timeline-element-subtitle" style={{color:"black", fontFamily:"aveneir next"}}>Google (YouTube)</h5>
+                <ul>
+                  <li style={{fontFamily:"aveneir next"}}>Developed AI-driven recommendation systems to optimize creator content strategies, increasing creator revenue, watch time, and subscriber growth using machine learning models.</li>
+                  <li style={{fontFamily:"aveneir next"}}>Built scalable ML inference pipelines leveraging Tflex for efficient training and real-time model deployment, ensuring high performance and availability of recommendations.</li>
+                  <li style={{fontFamily:"aveneir next"}}>Wrote complex SQL queries to analyze YouTube’s vast data infrastructure, extracting actionable insights for model improvement, A/B testing, and content strategy.</li>
+                  <li style={{fontFamily:"aveneir next"}}>Worked cross-functionally with product and research teams to integrate model outputs into YouTube’s core creator tools, improving user engagement and content discoverability.</li>
+                </ul>
+            </VerticalTimelineElement>
+    <VerticalTimelineElement
+                className="vertical-timeline-element--work"
+                contentStyle={{ background: '#4158d0', color: '#fff' }}
+                contentArrowStyle={{ borderRight: '7px solid  #4158d0' }}
+                date={<span style={{ color: "black" }}>
+                    Oct 2024 - Jan 2025
+                </span>}
+                iconStyle={{ background: 'black', color: '#4158d0' }}
+                icon={<MdOutlineWork />}
+                >
+                <h3 className="vertical-timeline-element-title" style={{color:"black", fontFamily:"aveneir next"}}>Software Engineer III</h3>
+                <h5 className="vertical-timeline-element-subtitle" style={{color:"black", fontFamily:"aveneir next"}}>Walmart</h5>
+                <ul>
+                <li style={{fontFamily:"aveneir next"}}>Developing a dashboard for Walmart and Sam's Club stores to monitor the status of TVs used for displaying advertisements. The dashboard tracks the number of TVs playing ads  and provides functionality to remotely reboot TVs and control ad playback.</li>
+                <li style={{fontFamily:"aveneir next"}}>Utilizing React and Typescript for front-end development, implementing server-side rendering and caching to optimize the display of store and device data on the dashboard.</li>
+                <li style={{fontFamily:"aveneir next"}}>Utilizing Java Spring Boot for writing APIs and managing data with SQL databases, while deploying services on WCNP Cloud to ensure scalability and reliability.</li>
+                </ul>
+            </VerticalTimelineElement>
             <VerticalTimelineElement
                 className="vertical-timeline-element--work"
                 contentStyle={{ background: '#4158d0', color: '#fff' }}
                 contentArrowStyle={{ borderRight: '7px solid  #4158d0' }}
                 date={<span style={{ color: "black" }}>
-                    Jul 2024 - Present
+                    Jul 2024 - Oct 2024
                 </span>}
                 iconStyle={{ background: 'black', color: '#4158d0' }}
                 icon={<MdOutlineWork />}

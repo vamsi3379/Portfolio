@@ -67,12 +67,12 @@ const ContactForm = () => {
         <div className="single_address">
           <i className="fa fa-map-marker"></i>
           <h4 style={{fontFamily:"aveneir next"}}>Address</h4>
-          <p style={{fontFamily:"aveneir next"}}>Gainesville, FL 32608</p>
+          <p style={{fontFamily:"aveneir next"}}>Mountain View, California</p>
         </div>
         <div className="single_address">
           <i className="fa fa-envelope"></i>
           <h4 style={{fontFamily:"aveneir next"}}>Send your message</h4>
-          <p style={{fontFamily:"aveneir next"}}>vamsi.pachamatla@ufl.edu</p>
+          <p style={{fontFamily:"aveneir next"}}>vamsipachamatla79@gmail.com</p>
         </div>
         <div className="single_address">
           <i className="fa fa-phone"></i>
