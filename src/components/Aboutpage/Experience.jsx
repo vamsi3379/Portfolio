@@ -31,7 +31,7 @@ const Experience = () => (
                 icon={<MdOutlineWork />}
             >
                 <h3 className="vertical-timeline-element-title" style={{color:"black", fontFamily:"aveneir next"}}>Software Engineer</h3>
-                <h5 className="vertical-timeline-element-subtitle" style={{color:"black", fontFamily:"aveneir next"}}>Google (YouTube)</h5>
+                <h5 className="vertical-timeline-element-subtitle" style={{color:"black", fontFamily:"aveneir next"}}>Google</h5>
                 <ul>
                   <li style={{fontFamily:"aveneir next"}}>Developed AI-driven recommendation systems to optimize creator content strategies, increasing creator revenue, watch time, and subscriber growth using machine learning models.</li>
                   <li style={{fontFamily:"aveneir next"}}>Built scalable ML inference pipelines leveraging Tflex for efficient training and real-time model deployment, ensuring high performance and availability of recommendations.</li>
